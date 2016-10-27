@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<header>
+  <div class="section section-accent">
+    <div class="container">
+      {% include nav.html %}
+    </div>
+  </div>
+</header>
+
+  {% if page.project.slides %}
+    {% include slider.html %}
+  {% endif %}
+
+  <div class="section">
+    <div class="container margin-bottom">
+      <div class="row">
+        <div class="col-12">
+          <h2>{{page.project.name}}</h2>
+        </div>
+        <div class="col-4">
+          <p>
+            {% if page.project.client %}
+              <b>Client: </b> {{page.project.client}}
+              <br />
+            {% endif %}
+
+            {% if page.project.platform %}
+              <b>Platform: </b> {{page.project.platform}}
+              <br />
+            {% endif %}
+
+            {% if page.project.year %}
+              <b>Date: </b> {{page.project.year}}
+              <br />
+            {% endif %}
+
+            {% if page.project.tech %}
+              <b>Client: </b> {{page.project.tech}}
+              <br />
+            {% endif %}
+          </p>
+
+          {% if page.project.url %}
+            <p>
+              <a class="font-weight-bold" href="{{page.project.url}}">Visit Project</a>
+            </p>
+          {% endif %}
+        </div>
+        <div class="col-8">
+          <p>
+            {{content}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/workItem}}
+
+
+{{> hire}}
+
+{{> footer}}

@@ -1,0 +1,36 @@
+.section {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: $page-background-color;
+}
+
+.section-primary {
+  background-color: $color-primary;
+  color: $font-color-light;
+}
+
+.section-primary-dark {
+  background-color: $color-primary-dark;
+  color: $font-color-light;
+}
+
+.section-accent {
+  background-color: $color-accent;
+  color: $font-color-light;
+}
+
+.section-accent-dark {
+  background-color: $color-accent-dark;
+  color: $font-color-light;
+}
+
+.section-blue {
+  background-color: $color-blue;
+  color: $font-color-light;
+}

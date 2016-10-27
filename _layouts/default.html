@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Sofia|PT+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/public/css/style.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <title>{% if page.title %}{{ page.title | append: ' - ' | append: site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+</head>
+<body>
+
+  {{content}}
+
+  <footer>
+    <div class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p class="font-size-small text-center">
+              Made by Lukas von Mateffy (<a class="font-weight-bold" href="https://twitter.com/Capevace">@Capevace</a>)
+            </p>
+          </div>
+          <div class="col-6">
+            <p class="font-size-small text-center">
+              <a class="font-weight-bold" href="https://twitter.com/Capevace">Twitter</a>
+              <span class="separator">|</span>
+              <a class="font-weight-bold" href="https://github.com/Capevace">GitHub</a>
+              <span class="separator">|</span>
+              <a class="font-weight-bold" href="/disclaimer">Disclaimer</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ "/public/js/app.js" | relative_url }}" charset="utf-8"></script>
+</body>
+</html>

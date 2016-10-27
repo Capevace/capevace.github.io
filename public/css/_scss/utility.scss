@@ -1,0 +1,66 @@
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-top {
+  margin-top: 30px
+}
+
+.margin-bottom {
+  margin-bottom: 30px
+}
+
+.margin-top-big {
+  margin-top: 100px
+}
+
+.margin-bottom-big {
+  margin-bottom: 100px;
+}
+
+.margin-top-huge {
+  margin-top: 150px;
+}
+
+.margin-bottom-huge {
+  margin-bottom: 150px;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.hide-link-underline {
+  &::after {
+    display: none;
+  }
+}
+
+.separator {
+  &::before, &::after {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+  }
+}

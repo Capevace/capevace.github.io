@@ -1,0 +1,33 @@
+.quote-container {
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.quote-image {
+  img {
+    border: 4px solid darken($color-gray, 10%);
+    border-radius: 100%;
+    width: 100%;
+  }
+}
+
+.quote-text {
+  display: block;
+  border-left: 4px solid $color-gray;
+  padding-left: 20px;
+  margin-left: 10px;
+  height: 100%;
+
+  p:first-child {
+    font-size: 2.1rem;
+    margin-top: 17px;
+  }
+
+  .author {
+    @extend .font-size-medium;
+    @extend .font-weight-bold;
+
+    color: darken($color-gray, 20%);
+    font-size: 1.8rem;
+  }
+}
