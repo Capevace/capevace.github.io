@@ -4,8 +4,3 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-
-{% include about.html %}
-{% include work.html %}
-{% include skills.html %}
-{% include hire.html %}

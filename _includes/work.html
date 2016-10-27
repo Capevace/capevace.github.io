@@ -12,9 +12,9 @@
 
           <div class="col-4 ">
             <div class="work-item">
-              <a class="work-item-container" href="{{project.slug | relative_url}}">
+              <a class="work-item-container" href="{{ site.github.url | append: project.slug | relative_url}}">
                 <div class="work-item-thumbnail">
-                  <img src="{{ project.slug | append: '/thumbnail.png' | relative_url }}" />
+                  <img src="{{ site.github.url | append: project.slug | append: '/thumbnail.png' | relative_url }}" />
                 </div>
                 <div class="work-item-info">
                   <span class="work-item-name">{{project.project.name}}</span>
