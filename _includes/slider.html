@@ -14,7 +14,7 @@
           <div class="slider-slides">
             {% for slide in page.project.slides %}
               <div class="slider-slide">
-                <img src="{{ site.github.url | append: page.slug | append: '/' | append: slide | relative_url }}" alt="The project displayed inside a device." />
+                <img src="{{ site.github.url | append: '/' | append: page.slug | append: '/' | append: slide | relative_url }}" alt="The project displayed inside a device." />
               </div>
             {% endfor %}
           </div>
