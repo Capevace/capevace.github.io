@@ -5,6 +5,8 @@ $color-blue: rgba(59,155,218,1);
 $color-dark-blue: rgba(51,55,69,1);
 $color-pink: rgba(236,56,77,1);
 $color-pink-dark: #d53346;
+$color-yellow: #efd336;
+$color-yellow-dark: darken($color-yellow, 10%);
 
 $color-primary: $color-dark-blue;
 $color-primary-dark: darken($color-primary, 4%);
