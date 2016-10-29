@@ -2,19 +2,11 @@
 layout: default
 ---
 
-<header>
-  <div class="section section-accent">
-    <div class="container">
-      {% include nav.html %}
-    </div>
-  </div>
-</header>
-
   {% if page.project.slides %}
     {% include slider.html %}
   {% endif %}
 
-  <div class="section">
+  <section class="section">
     <div class="container margin-bottom">
       <div class="row">
         <div class="col-12">
@@ -56,10 +48,4 @@ layout: default
         </div>
       </div>
     </div>
-  </div>
-{{/workItem}}
-
-
-{{> hire}}
-
-{{> footer}}
+  </section>

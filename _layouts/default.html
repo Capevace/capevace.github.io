@@ -13,10 +13,20 @@
 </head>
 <body>
 
-  {{content}}
+  <header>
+    <section class="section section-primary">
+      <div class="container">
+        {% include nav.html %}
+      </div>
+    </section>
+  </header>
+
+  <main>
+    {{content}}
+  </main>
 
   <footer>
-    <div class="section section-primary">
+    <section class="section section-primary">
       <div class="container">
         <div class="row">
           <div class="col-6">
@@ -35,11 +45,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </footer>
 
   <!-- Load fonts here so its not blocking first paint -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Sofia|PT+Mono" rel="stylesheet">
-  <script src="{{ site.github.url | append: "/public/js/app.js" | relative_url }}" charset="utf-8"></script>
+  <script async src="{{ site.github.url | append: "/public/js/app.js" | relative_url }}" charset="utf-8"></script>
 </body>
 </html>
