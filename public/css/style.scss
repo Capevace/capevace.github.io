@@ -21,6 +21,8 @@ html {
   font-size: 62.5%; }
 
 body {
+  @extend .font-smoothed;
+
   margin: 0;
   background-color: $page-background-color;
   font-family: $font-normal;
