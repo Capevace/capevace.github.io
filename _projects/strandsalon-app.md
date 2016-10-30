@@ -6,6 +6,7 @@ project:
   platform: iOS
   tech: Obj-C, PHP
   year: 2014
+order: 40
 ---
 
 The main purpose of the App was for common visitors of the *Strandsalon Beach Club* to be better informed about upcoming events and parties.

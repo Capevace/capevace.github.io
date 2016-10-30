@@ -7,6 +7,7 @@ project:
   tech: WordPress
   year: 2013
   url: http://disco78.com
+order: 60
 ---
 
 Disco78 is an event-planning company based in Germany. As they are delivering services for custom parties, the website included features such as an event-planner.

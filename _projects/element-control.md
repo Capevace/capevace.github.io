@@ -7,6 +7,7 @@ project:
   year: 2014
   slides:
     - slide-1.png
+order: 30
 ---
 
 This mobile game was created during a development contest.
