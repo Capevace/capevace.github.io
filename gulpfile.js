@@ -72,7 +72,7 @@ gulp.task('scss', () =>
 );
 
 gulp.task('js:watch', ['js'], () => {
-  gulp.watch('./app/js/**/*.js', ['js']);
+  gulp.watch('./public/_js/**/*.js', ['js']);
 });
 
 gulp.task('scss:watch', ['scss'], () => {

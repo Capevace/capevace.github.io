@@ -14,10 +14,22 @@
 <body>
 
   {% if layout.header_color == 'primary' %}
-    <header>
+    <header class="relative" id="background-canvas-container">
+      <canvas class="background-canvas"></canvas>
+      <section class="section section-primary">
+        <div class="container text-lifted">
+          {% include nav.html %}
+        </div>
+      </section>
       <section class="section section-primary">
         <div class="container">
-          {% include nav.html %}
+
+          <div class="row">
+            <div class="col-12 text-lifted">
+              <h1 class="header-title">I'm &nbsp;Lukas!</h1>
+              <p class="header-subtitle">&#x3C;junior-web-developer /&#x3E;</p>
+            </div>
+          </div>
         </div>
       </section>
     </header>

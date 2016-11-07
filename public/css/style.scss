@@ -16,6 +16,7 @@
 @import "slider";
 @import "quote";
 @import "table";
+@import "background-canvas";
 
 html {
   font-size: 62.5%; }
@@ -31,4 +32,8 @@ body {
 
 .test {
   background: red;
+}
+
+header.relative {
+  position: relative;
 }
