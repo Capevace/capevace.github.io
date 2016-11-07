@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="stylesheet" href="{{ "/public/css/style.css" | prepend: site.github.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/public/css/style.css" | absolute_url }}">
   <link rel="canonical" href="{{ site.github.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
@@ -50,6 +50,6 @@
 
   <!-- Load fonts here so its not blocking first paint -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Sofia|PT+Mono" rel="stylesheet">
-  <script async src="{{ site.github.url | append: "/public/js/app.js" | relative_url }}" charset="utf-8"></script>
+  <script async src="{{ "/public/js/app.js" | absolute_url }}" charset="utf-8"></script>
 </body>
 </html>
