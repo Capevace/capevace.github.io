@@ -13,13 +13,25 @@
 </head>
 <body>
 
-  <header>
-    <section class="section section-primary">
-      <div class="container">
-        {% include nav.html %}
-      </div>
-    </section>
-  </header>
+  {% if layout.header_color == 'primary' %}
+    <header>
+      <section class="section section-primary">
+        <div class="container">
+          {% include nav.html %}
+        </div>
+      </section>
+    </header>
+
+  {% else %}
+    <header>
+      <section class="section section-accent">
+        <div class="container">
+          {% include nav.html %}
+        </div>
+      </section>
+    </header>
+
+  {% endif %}
 
   <main>
     {{content}}
