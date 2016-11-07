@@ -18,7 +18,7 @@ email: your-email@domain.com
 description: >
   I am a young web developer from Germany, who loves to create for web and mobile devices.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "smoolabs.com"
+url: "http://smoolabs.com"
 # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: capevace
 github_username:  capevace
