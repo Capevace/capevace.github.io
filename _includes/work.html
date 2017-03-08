@@ -10,14 +10,14 @@
       {% assign projects = site.projects | sort: 'order' | reverse %}
       {% for project in projects %}
 
-          <div class="col-4 ">
+          <div class="col-4">
             <div class="work-item">
               <a class="work-item-container" href="{{ '/' | append: project.slug | relative_url}}">
                 <div class="work-item-thumbnail">
                   <img src="{{ append: '/' | append: project.slug | append: '/thumbnail.png' | relative_url }}" />
                 </div>
                 <div class="work-item-info">
-                  <span class="work-item-name">{{project.project.name}}</span>
+                  <span class="work-item-name">{{project.title}}</span>
                   <span class="work-item-type">{{project.project.platform}}</span>
                   <span class="work-item-date">{{project.project.year}}</span>
                 </div>

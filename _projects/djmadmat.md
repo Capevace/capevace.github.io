@@ -1,5 +1,5 @@
 ---
-title: DJMatMat
+title: DJMatMat.com
 project:
   name: DJMatMat.com
   client: DJMadMat

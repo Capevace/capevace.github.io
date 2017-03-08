@@ -11,7 +11,7 @@ header_color: 'accent'
     <div class="container margin-bottom">
       <div class="row">
         <div class="col-12">
-          <h2>{{page.project.name}}</h2>
+          <h2 style="{{page.project.titleStyle}}">{{page.project.name}}</h2>
         </div>
         <div class="col-4">
           <p>
@@ -31,14 +31,14 @@ header_color: 'accent'
             {% endif %}
 
             {% if page.project.tech %}
-              <b>Client: </b> {{page.project.tech}}
+              <b>Tech: </b> {{page.project.tech}}
               <br />
             {% endif %}
           </p>
 
           {% if page.project.url %}
             <p>
-              <a class="font-weight-bold" href="{{page.project.url}}">Visit Project</a>
+              <a class="font-weight-bold" href="{{page.project.url}}" target="_blank">Visit Project</a>
             </p>
           {% endif %}
         </div>
