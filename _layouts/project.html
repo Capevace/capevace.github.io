@@ -37,9 +37,15 @@ header_color: 'accent'
           </p>
 
           {% if page.project.url %}
-            <p>
-              <a class="font-weight-bold" href="{{page.project.url}}" target="_blank">Visit Project</a>
-            </p>
+            {% if page.project.urlTitle %}
+              <p>
+                <a class="font-weight-bold" href="{{page.project.url}}" target="_blank">{{page.project.urlTitle}}</a>
+              </p>
+            {% else %}
+              <p>
+                <a class="font-weight-bold" href="{{page.project.url}}" target="_blank">Visit Project</a>
+              </p>
+            {% endif %}
           {% endif %}
         </div>
         <div class="col-8">
