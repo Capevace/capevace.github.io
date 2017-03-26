@@ -5,7 +5,7 @@ project:
   platform: macOS
   tech: JavaScript (Electron)
   year: 2017
-  url: https://github.com/Capevace/playmusic-suite/releases/download/1.0.0/playmusic-suite-1.0.0-mac.zip
+  url: https://github.com/Capevace/playmusic-suite/releases
   urlTitle: Download for macOS
   slides:
     - playmusic-suite.png
