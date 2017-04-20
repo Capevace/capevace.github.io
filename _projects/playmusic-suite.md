@@ -2,7 +2,7 @@
 title: Google Music Suite
 project:
   name: Google Play Music Suite
-  platform: macOS
+  platform: macOS / Windows
   tech: JavaScript (Electron)
   year: 2017
   url: https://github.com/Capevace/playmusic-suite/releases
