@@ -1,0 +1,32 @@
+<section class="section" id="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Blog</h2>
+      </div>
+    </div>
+
+    <div class="row margin-bottom work-items">
+      {% assign posts = site.posts | reverse %}
+      {% for post in posts %}
+
+          <div class="col-4">
+            <div class="work-item no-animation no-image">
+              <a class="work-item-container" href="{{ '/' | append: project.slug | relative_url}}">
+                <!--<div class="work-item-thumbnail">
+                  <img src="{{ append: '/' | append: project.slug | append: '/thumbnail.png' | relative_url }}" />
+                </div>-->
+                <div class="work-item-info">
+                  <span class="work-item-name">{{post.title}}</span>
+                  <span class="work-item-type">Platform</span>
+                  <span class="work-item-date">Year</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

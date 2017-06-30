@@ -56,3 +56,9 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "blog"
+    values:
+      layout: "default"
