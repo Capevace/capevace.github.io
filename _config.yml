@@ -18,7 +18,7 @@ email: your-email@domain.com
 description: >
   I am a young Javascript, PHP and WordPress Developer from Germany. I love to create for the web and mobile space. I run a small design studio: Smoolabs.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://smoolabs.com"
+url: "https://mateffy.me"
 # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: capevace
 github_username:  capevace
