@@ -1,0 +1,24 @@
+---
+layout: default
+header_color: 'accent'
+---
+
+  {% if page.slides %}
+    {% include slider.html %}
+  {% endif %}
+
+  <section class="section blog-post">
+    <div class="container margin-bottom">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="post-title">{{page.title}}</h2>
+          <h3 class="post-date">{{page.date | date_to_long_string }}</h3>
+        </div>
+        <div class="col-12">
+          <p>
+            {{content}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -241,3 +241,27 @@ a {
 
   font-size: 3.5rem;
 }
+
+.post-title {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.post-date {
+  text-align: left;
+  color: #ec384d;
+  text-shadow: none;
+  margin: 0;
+  font-size: 2.1rem;
+}
+
+@media (min-size: 640px) {
+  .post-title {
+    float: left;
+  }
+
+  .post-date {
+    text-align: right;
+    margin-top: 40px;
+  }
+}

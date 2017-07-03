@@ -17,6 +17,12 @@
                 <img src="{{ '/' | append: page.slug | append: '/' | append: slide | relative_url }}" alt="The project displayed inside a device." />
               </div>
             {% endfor %}
+
+            {% for slide in page.slides %}
+              <div class="slider-slide">
+                <img src="{{ '/' | append: page.slug | append: '/' | append: slide | relative_url }}" alt="The project displayed inside a device." />
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>

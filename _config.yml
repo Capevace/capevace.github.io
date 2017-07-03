@@ -40,6 +40,9 @@ sass:
   style: compressed
 
 collections:
+  posts:
+    output: true
+    permalink: /posts/:path
   projects:
     output: true
     permalink: /:path/
@@ -58,7 +61,7 @@ defaults:
       layout: "project"
   -
     scope:
-      path: "" # an empty string here means all files in the project
-      type: "blog"
+      path: "post" # an empty string here means all files in the project
+      type: "posts"
     values:
-      layout: "default"
+      layout: "post"
