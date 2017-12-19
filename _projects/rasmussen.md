@@ -7,7 +7,7 @@ project:
   tech: WordPress / WooCommerce
   year: 2017
   url: https://shop.rasmussen.de
-order: 99
+order: 10000
 ---
 
 An online shop for Rasmussen & Co. Gemüsegroßhandel GmbH.
