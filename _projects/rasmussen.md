@@ -1,13 +1,13 @@
 ---
-title: Rasmussen Webshop
+title: Rasmussen24.de
 project:
-  name: Rasmussen Webshop
+  name: Rasmussen24.de
   client: Rasmussen & Co. Gemüsegroßhandel GmbH
   platform: Web
   tech: WordPress / WooCommerce
-  year: 2017
-  url: https://shop.rasmussen.de
+  year: 2018
+  url: https://rasmussen24.de
 order: 10000
 ---
 
-An online shop for Rasmussen & Co. Gemüsegroßhandel GmbH.
+A fully fledged eCommerce shop based on WooCommerce for the local fruit & working equipment retailer Rasmussen.
