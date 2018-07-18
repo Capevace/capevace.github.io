@@ -39,7 +39,9 @@
     "watch": "gulp watch"
   },
   "eslintConfig": {
-    "extends": ["eslint:recommended"],
+    "extends": [
+      "eslint:recommended"
+    ],
     "env": {
       "browser": true,
       "commonjs": true

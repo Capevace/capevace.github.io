@@ -7,6 +7,8 @@ project:
   tech: WordPress
   year: 2013
   url: http://disco78.com
+  slides:
+    - slide-1.png
 order: 60
 ---
 

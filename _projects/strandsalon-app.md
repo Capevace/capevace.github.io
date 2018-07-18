@@ -6,6 +6,9 @@ project:
   platform: iOS
   tech: Obj-C, PHP
   year: 2014
+  slides:
+    - slide-1.png
+    - slide-2.png
 order: 40
 ---
 
