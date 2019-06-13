@@ -3,8 +3,8 @@ layout: default
 rawTitle: Lukas Mateffy - Software Engineer
 ---
 
-<div class="container my-6 mb-10 flex flex-wrap sm:flex-no-wrap">
-	<img class="rounded-full border-8 shadow-lg flex-initial h-64 w-64 border-white mr-10 mb-5 sm:mb-0" src="{{ '/public/images/profile.jpg' | absolute_url }}">
+<div class="container my-6 mb-10 flex flex-wrap sm:flex-no-wrap justify-center sm:justify-start">
+	<img class="rounded-full border-8 shadow-lg flex-initial h-64 w-64 border-white sm:mr-10 mb-5 sm:mb-0" src="{{ '/public/images/profile.jpg' | absolute_url }}">
 	<article class="flex-1">
 		<p class="text-3xl mb-5">
 			<span class="font-semibold" title="General Kenobi!">Hello there!</span> I'm Lukas Mateffy and I am a software engineer living in Lübeck, Germany.
