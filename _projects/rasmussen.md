@@ -9,6 +9,7 @@ project:
   url: https://rasmussen24.de
   slides:
     - slide-1.png
+    - slide-2.png
 order: 10000
 ---
 

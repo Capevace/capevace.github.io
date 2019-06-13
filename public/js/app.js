@@ -1,2 +1,257 @@
-!function e(t,n,r){function o(a,l){if(!n[a]){if(!t[a]){var c="function"==typeof require&&require;if(!l&&c)return c(a,!0);if(i)return i(a,!0);var u=new Error("Cannot find module '"+a+"'");throw u.code="MODULE_NOT_FOUND",u}var s=n[a]={exports:{}};t[a][0].call(s.exports,function(e){var n=t[a][1][e];return o(n?n:e)},s,s.exports,e,t,n,r)}return n[a].exports}for(var i="function"==typeof require&&require,a=0;a<r.length;a++)o(r[a]);return o}({1:[function(e,t,n){(function(e){!function(e,r){"function"==typeof define&&define.amd?define([],r(e)):"object"==typeof n?t.exports=r(e):e.smoothScroll=r(e)}("undefined"!=typeof e?e:this.window||this.global,function(e){"use strict";var t,n,r,o,i,a,l,c={},u="querySelector"in document&&"addEventListener"in e,s={selector:"[data-scroll]",selectorHeader:null,speed:500,easing:"easeInOutCubic",offset:0,callback:function(){}},d=function(){var e={},t=!1,n=0,r=arguments.length;"[object Boolean]"===Object.prototype.toString.call(arguments[0])&&(t=arguments[0],n++);for(var o=function(n){for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t&&"[object Object]"===Object.prototype.toString.call(n[r])?e[r]=d(!0,e[r],n[r]):e[r]=n[r])};n<r;n++){var i=arguments[n];o(i)}return e},f=function(e){return Math.max(e.scrollHeight,e.offsetHeight,e.clientHeight)},m=function(e,t){var n,r,o=t.charAt(0),i="classList"in document.documentElement;for("["===o&&(t=t.substr(1,t.length-2),n=t.split("="),n.length>1&&(r=!0,n[1]=n[1].replace(/"/g,"").replace(/'/g,"")));e&&e!==document&&1===e.nodeType;e=e.parentNode){if("."===o)if(i){if(e.classList.contains(t.substr(1)))return e}else if(new RegExp("(^|\\s)"+t.substr(1)+"(\\s|$)").test(e.className))return e;if("#"===o&&e.id===t.substr(1))return e;if("["===o&&e.hasAttribute(n[0])){if(!r)return e;if(e.getAttribute(n[0])===n[1])return e}if(e.tagName.toLowerCase()===t)return e}return null},p=function(e){"#"===e.charAt(0)&&(e=e.substr(1));for(var t,n=String(e),r=n.length,o=-1,i="",a=n.charCodeAt(0);++o<r;){if(t=n.charCodeAt(o),0===t)throw new InvalidCharacterError("Invalid character: the input contains U+0000.");i+=t>=1&&t<=31||127==t||0===o&&t>=48&&t<=57||1===o&&t>=48&&t<=57&&45===a?"\\"+t.toString(16)+" ":t>=128||45===t||95===t||t>=48&&t<=57||t>=65&&t<=90||t>=97&&t<=122?n.charAt(o):"\\"+n.charAt(o)}return"#"+i},h=function(e,t){var n;return"easeInQuad"===e&&(n=t*t),"easeOutQuad"===e&&(n=t*(2-t)),"easeInOutQuad"===e&&(n=t<.5?2*t*t:-1+(4-2*t)*t),"easeInCubic"===e&&(n=t*t*t),"easeOutCubic"===e&&(n=--t*t*t+1),"easeInOutCubic"===e&&(n=t<.5?4*t*t*t:(t-1)*(2*t-2)*(2*t-2)+1),"easeInQuart"===e&&(n=t*t*t*t),"easeOutQuart"===e&&(n=1- --t*t*t*t),"easeInOutQuart"===e&&(n=t<.5?8*t*t*t*t:1-8*--t*t*t*t),"easeInQuint"===e&&(n=t*t*t*t*t),"easeOutQuint"===e&&(n=1+--t*t*t*t*t),"easeInOutQuint"===e&&(n=t<.5?16*t*t*t*t*t:1+16*--t*t*t*t*t),n||t},v=function(e,t,n){var r=0;if(e.offsetParent)do r+=e.offsetTop,e=e.offsetParent;while(e);return r=Math.max(r-t-n,0),Math.min(r,g()-y())},y=function(){return Math.max(document.documentElement.clientHeight,e.innerHeight||0)},g=function(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight)},b=function(e){return e&&"object"==typeof JSON&&"function"==typeof JSON.parse?JSON.parse(e):{}},w=function(e){return e?f(e)+e.offsetTop:0},O=function(t,n,r){r||(t.focus(),document.activeElement.id!==t.id&&(t.setAttribute("tabindex","-1"),t.focus(),t.style.outline="none"),e.scrollTo(0,n))};c.animateScroll=function(n,r,a){var c=b(r?r.getAttribute("data-options"):null),u=d(t||s,a||{},c),f="[object Number]"===Object.prototype.toString.call(n),m=f||!n.tagName?null:n;if(f||m){var p=e.pageYOffset;u.selectorHeader&&!o&&(o=document.querySelector(u.selectorHeader)),i||(i=w(o));var y,I,x=f?n:v(m,i,parseInt(u.offset,10)),E=x-p,L=g(),S=0,H=function(t,o,i){var a=e.pageYOffset;(t==o||a==o||e.innerHeight+a>=L)&&(clearInterval(i),O(n,o,f),u.callback(n,r))},N=function(){S+=16,y=S/parseInt(u.speed,10),y=y>1?1:y,I=p+E*h(u.easing,y),e.scrollTo(0,Math.floor(I)),H(I,x,l)},A=function(){clearInterval(l),l=setInterval(N,16)};0===e.pageYOffset&&e.scrollTo(0,0),A()}};var I=function(t){e.location.hash,n&&(n.id=n.getAttribute("data-scroll-id"),c.animateScroll(n,r),n=null,r=null)},x=function(o){if(0===o.button&&!o.metaKey&&!o.ctrlKey&&(r=m(o.target,t.selector),r&&"a"===r.tagName.toLowerCase()&&r.hostname===e.location.hostname&&r.pathname===e.location.pathname&&/#/.test(r.href))){var i=p(r.hash);if("#"===i){o.preventDefault(),n=document.body;var a=n.id?n.id:"smooth-scroll-top";return n.setAttribute("data-scroll-id",a),n.id="",void(e.location.hash.substring(1)===a?I():e.location.hash=a)}n=document.querySelector(i),n&&(n.setAttribute("data-scroll-id",n.id),n.id="",r.hash===e.location.hash&&(o.preventDefault(),I()))}},E=function(e){a||(a=setTimeout(function(){a=null,i=w(o)},66))};return c.destroy=function(){t&&(document.removeEventListener("click",x,!1),e.removeEventListener("resize",E,!1),t=null,n=null,r=null,o=null,i=null,a=null,l=null)},c.init=function(n){u&&(c.destroy(),t=d(s,n||{}),o=t.selectorHeader?document.querySelector(t.selectorHeader):null,i=w(o),document.addEventListener("click",x,!1),e.addEventListener("hashchange",I,!1),o&&e.addEventListener("resize",E,!1))},c})}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{}],2:[function(e,t,n){var r=e("smooth-scroll"),o=e("./slider"),i=e("./work"),a=e("./util").ready;r.init({offset:40}),a(function(){o("project-slider"),i("work")})},{"./slider":3,"./util":4,"./work":5,"smooth-scroll":1}],3:[function(e,t,n){t.exports=function(e){function t(){return clearInterval(l),setInterval(function(){n(i+1)},5e3)}function n(e){var t=i;i=e,i>=a?i=0:i<0&&(i=a-1),o[i].style.opacity=1,o[i].style.zIndex=1,o[t].style.opacity=0,o[t].style.zIndex=0}var r=document.getElementById(e);if(!r)return void window.console.warn('No slider with id "'+e+'" found.');var o=r.querySelectorAll(".slider-slide"),i=0,a=o.length,l=t(),c=r.querySelector(".slider-action-next"),u=r.querySelector(".slider-action-prev");1===a&&(clearInterval(l),c&&(c.style.display="none"),u&&(u.style.display="none"));for(var s=0;s<a;s++)0===s&&(o[s].style.opacity=1,o[s].style.zIndex=1),o[s].style.marginLeft="-"+50*s+"%";c&&c.addEventListener("click",function(e){e.preventDefault(),n(i+1),l=t()}),u&&u.addEventListener("click",function(e){e.preventDefault(),n(i-1),l=t()})}},{}],4:[function(e,t,n){t.exports.ready=function(e){"loading"!=document.readyState?e():document.addEventListener("DOMContentLoaded",e)},t.exports.addClass=function(e,t){e.classList?e.classList.add(t):e.className+=" "+t},t.exports.removeClass=function(e,t){e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp("(^|\\b)"+t.split(" ").join("|")+"(\\b|$)","gi")," ")}},{}],5:[function(e,t,n){var r=e("./util");t.exports=function(e){var t=document.querySelector("#"+e+" .work-items"),n=t?t.querySelector("#view-more-work-button"):null;n&&n.addEventListener("click",function(e){e.preventDefault(),r.addClass(t,"work-expanded")})}},{"./util":4}]},{},[2]);
-//# sourceMappingURL=app.js.map
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./public/_css/style.css":
+/*!*******************************!*\
+  !*** ./public/_css/style.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./public/_js/main.js":
+/*!****************************!*\
+  !*** ./public/_js/main.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var slider = __webpack_require__(/*! ./slider */ "./public/_js/slider.js");
+
+var work = __webpack_require__(/*! ./work */ "./public/_js/work.js");
+
+var ready = __webpack_require__(/*! ./util */ "./public/_js/util.js").ready; // var backgroundCanvas = require('./background-canvas');
+
+
+ready(function () {
+  slider('project-slider');
+  work('work'); // backgroundCanvas('background-canvas-container');
+});
+
+/***/ }),
+
+/***/ "./public/_js/slider.js":
+/*!******************************!*\
+  !*** ./public/_js/slider.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (sliderId) {
+  var slider = document.getElementById(sliderId);
+
+  if (!slider) {
+    window.console.warn('No slider with id "' + sliderId + '" found.');
+    return;
+  } // var slideContainer = slider.querySelector('.slider-slides');
+
+
+  var slides = slider.querySelectorAll('.slider-slide');
+  var currentSlide = 0;
+  var slideCount = slides.length;
+  var slideInterval = resetInterval();
+  var nextButton = slider.querySelector('.slider-action-next');
+  var prevButton = slider.querySelector('.slider-action-prev');
+
+  if (slideCount === 1) {
+    clearInterval(slideInterval);
+    if (nextButton) nextButton.style.display = 'none';
+    if (prevButton) prevButton.style.display = 'none';
+  }
+
+  console.log(slides);
+
+  for (var i = 0; i < slideCount; i++) {
+    if (i === 0) {
+      slides[i].style.opacity = 1;
+    } else {
+      slides[i].style.opacity = 0;
+    } // slides[i].style.marginLeft = '-' + (i * 50) + '%';
+
+  }
+
+  if (nextButton) nextButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    updateSlide(currentSlide + 1);
+    slideInterval = resetInterval();
+  });
+  if (prevButton) prevButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    updateSlide(currentSlide - 1);
+    slideInterval = resetInterval();
+  });
+
+  function resetInterval() {
+    clearInterval(slideInterval);
+    return setInterval(function () {
+      updateSlide(currentSlide + 1);
+    }, 5000);
+  }
+
+  function updateSlide(index) {
+    var oldSlide = currentSlide;
+    currentSlide = index;
+
+    if (currentSlide >= slideCount) {
+      currentSlide = 0;
+    } else if (currentSlide < 0) {
+      currentSlide = slideCount - 1;
+    } // slideContainer.style.marginLeft = '-' + (currentSlide * 100) + '%';
+
+
+    slides[currentSlide].style.opacity = 1;
+    slides[currentSlide].style.zIndex = 1;
+    slides[oldSlide].style.opacity = 0;
+    slides[oldSlide].style.zIndex = 0;
+  }
+};
+
+/***/ }),
+
+/***/ "./public/_js/util.js":
+/*!****************************!*\
+  !*** ./public/_js/util.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports.ready = function ready(fn) {
+  if (document.readyState != 'loading') {
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+};
+
+module.exports.addClass = function addClass(element, className) {
+  if (element.classList) element.classList.add(className);else element.className += ' ' + className;
+};
+
+module.exports.removeClass = function removeClass(element, className) {
+  if (element.classList) element.classList.remove(className);else element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+};
+
+/***/ }),
+
+/***/ "./public/_js/work.js":
+/*!****************************!*\
+  !*** ./public/_js/work.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var util = __webpack_require__(/*! ./util */ "./public/_js/util.js");
+
+module.exports = function work(workContainerId) {
+  var container = document.querySelector('#' + workContainerId + ' .work-items');
+  var viewMoreButton = container ? container.querySelector('#view-more-work-button') : null;
+  if (viewMoreButton) viewMoreButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    util.addClass(container, 'work-expanded');
+  });
+};
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************!*\
+  !*** multi ./public/_js/main.js ./public/_css/style.css ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /Users/mat/Projects/capevace.github.io/public/_js/main.js */"./public/_js/main.js");
+module.exports = __webpack_require__(/*! /Users/mat/Projects/capevace.github.io/public/_css/style.css */"./public/_css/style.css");
+
+
+/***/ })
+
+/******/ });

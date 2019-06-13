@@ -1,24 +1,17 @@
 ---
 layout: default
-header_color: 'accent'
 ---
+<div class="container my-6 mb-10">
+	<h1 class="text-4xl font-bold mb-2 leading-tight">{{page.title}}</h1>
+	<section class="flex justify-between mb-5">
+		<p class="font-semibold text-gray-600">{{page.date | date_to_long_string }} &centerdot; 5 min read</p>
+		<!-- <div class="flex">
+			<p class="font-semibold text-gray-400 bg-gray-900 rounded-lg px-2 py-1 text-xs ml-2">#trash</p>
+			<p class="font-semibold text-gray-400 bg-gray-900 rounded-lg px-2 py-1 text-xs ml-2">#sth</p>
+		</div> -->
+	</section>
 
-  {% if page.slides %}
-    {% include slider.html %}
-  {% endif %}
+	{{ content }}
 
-  <section class="section blog-post">
-    <div class="container margin-bottom">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="post-title">{{page.title}}</h2>
-          <h3 class="post-date">{{page.date | date_to_long_string }}</h3>
-        </div>
-        <div class="col-12">
-          <p>
-            {{content}}
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+	<!-- <code class="block w-full my-5 bg-gray-900 rounded-lg p-5 text-white">npm install my-package --save</code> -->
+</div>

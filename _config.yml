@@ -1,25 +1,9 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Lukas von Mateffy
-email: your-email@domain.com
+title: Lukas Mateffy
+email: lukas@mateffy.me
 description: >
   I am a young Javascript, PHP and WordPress Developer from Germany. I love to create for the web and mobile space. I run a small design studio: Smoolabs.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.mateffy.me"
-# the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mateffy.me"
 twitter_username: capevace
 github_username:  capevace
 
@@ -35,14 +19,18 @@ exclude:
   - package.json
   - yarn.lock
   - public/_js
-sass:
-  sass_dir: public/css/_scss
-  style: compressed
+  - public/_css
+  - webpack.mix.js
+  - tailwind.config.js
+  - README.md
+  - package-lock.json
+  - mix-manifest.json
+  - CNAME
 
 collections:
   posts:
     output: true
-    permalink: /posts/:path
+    permalink: /post/:path
   projects:
     output: true
     permalink: /:path/
@@ -59,9 +47,3 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  -
-    scope:
-      path: "post" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"

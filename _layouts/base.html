@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	<meta name="keywords" content="web developer, web entwickler, smoolabs, lübeck, günstig, php, javascript, react, wordpress">
+	<meta name="author" content="Lukas Mateffy">
+	<meta name="copyright" content="(c) Lukas Mateffy">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="14 days">
+	<meta http-equiv="language" content="english, en">
+	
+	<link rel="stylesheet" href="{{ '/public/css/style.css' | absolute_url }}">
+	<link rel="canonical" href="{{ site.github.url | replace:'index.html','' | absolute_url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
+
+	<title>{% if page.rawTitle %}{{ page.rawTitle | escape }}{% elsif page.title %}{{ page.title | append: ' - ' | append: site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+</head>
+<body class="antialiased relative min-h-screen">
+	<div class="absolute inset-t-0 inset-x-0 bg-blue-500 h-1 shadow-blue"></div>
+
+	{{content}}
+
+	<!-- Load fonts here so its not blocking first paint -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Sofia|PT+Mono" rel="stylesheet">
+	<script async src="{{ '/public/js/app.js' | absolute_url }}" charset="utf-8"></script>
+</body>
+</html>

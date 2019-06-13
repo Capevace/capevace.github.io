@@ -14,20 +14,25 @@
     "babelify": "^7.3.0",
     "browser-sync": "^2.17.5",
     "browserify": "^13.1.1",
+    "cross-env": "^5.2.0",
     "eslint": "^3.8.0",
     "graceful-fs": "^4.1.9",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-image-resize": "^0.10.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.1.1",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
+    "laravel-mix": "^4.0.16",
     "object-assign": "^4.1.0",
     "prompt": "^1.0.0",
+    "tailwindcss": "^1.0.4",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
     "smooth-scroll": "cferdinandi/smooth-scroll"
@@ -36,18 +41,8 @@
     "start": "cd jekyll && jekyll serve",
     "project": "node project-generator.js",
     "work": "gulp work",
-    "watch": "gulp watch"
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended"
-    ],
-    "env": {
-      "browser": true,
-      "commonjs": true
-    },
-    "rules": {
-      "semi": "error"
-    }
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
+    "watch:css": "gulp css:watch",
+    "tailwind": "tailwind build public/_css/style.css -o public/css/style.css"
   }
 }

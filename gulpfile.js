@@ -14,70 +14,97 @@ const imageResize = require('gulp-image-resize');
 gulp.task('work', ['work-thumbnails', 'work-slides']);
 
 gulp.task('work-thumbnails', () => {
-  return gulp.src(['./app/data/**/thumbnail.png', './app/data/**/thumbnail.jpg', './app/data/**/thumbnail.jpeg'])
-    .pipe(imageResize({
-      width: 508,
-      height: 284,
-      upscale: true,
-      crop: true,
-      gravity: 'North',
-      background: '#888'
-    }))
-    .pipe(gulp.dest('./public/static/img/work/'));
+	return gulp
+		.src([
+			'./app/data/**/thumbnail.png',
+			'./app/data/**/thumbnail.jpg',
+			'./app/data/**/thumbnail.jpeg'
+		])
+		.pipe(
+			imageResize({
+				width: 508,
+				height: 284,
+				upscale: true,
+				crop: true,
+				gravity: 'North',
+				background: '#888'
+			})
+		)
+		.pipe(gulp.dest('./public/static/img/work/'));
 });
 
 gulp.task('work-slides', () => {
-  return gulp.src(['./app/data/**/slide-*.png', './app/data/**/slide-*.jpg', './app/data/**/slide-*.jpeg'])
-    .pipe(imageResize({
-      height: 427,
-      upscale: true,
-      crop: false,
-      gravity: 'Center',
-    }))
-    .pipe(gulp.dest('./public/static/img/work/'));
+	return gulp
+		.src([
+			'./app/data/**/slide-*.png',
+			'./app/data/**/slide-*.jpg',
+			'./app/data/**/slide-*.jpeg'
+		])
+		.pipe(
+			imageResize({
+				height: 427,
+				upscale: true,
+				crop: false,
+				gravity: 'Center'
+			})
+		)
+		.pipe(gulp.dest('./public/static/img/work/'));
 });
 
 gulp.task('js', () => {
-  const b = browserify({
-    entries: './public/_js/main.js',
-    debug: true,
-    extensions: ['.es6']
-  });
+	const b = browserify({
+		entries: './public/_js/main.js',
+		debug: true,
+		extensions: ['.es6']
+	});
 
-  return b.bundle()
-    .pipe(source('app.js'))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({ loadMaps: true }))
+	return (
+		b
+			.bundle()
+			.pipe(source('app.js'))
+			.pipe(buffer())
+			.pipe(sourcemaps.init({ loadMaps: true }))
 
-    // Add transformation tasks to the pipeline here.
-    .pipe(uglify())
-      .on('error', gutil.log)
+			// Add transformation tasks to the pipeline here.
+			.pipe(uglify())
+			.on('error', gutil.log)
 
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./public/js'));
+			.pipe(sourcemaps.write('./'))
+			.pipe(gulp.dest('./public/js'))
+	);
 });
 
-gulp.task('scss', () =>
-  gulp.src('./app/scss/main.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions', '> 2%'],
-      cascade: false,
-    }))
-    .pipe(cleanCSS({ debug: true }, (details) => {
-      console.log(`Original Size: ${details.stats.originalSize / 1000}kb`);
-      console.log(`Minified Size: ${details.stats.minifiedSize / 1000}kb`);
-    }))
-    .pipe(gulp.dest('./public/static/css'))
-);
+gulp.task('css', () => {
+	const postcss = require('gulp-postcss');
+
+	return gulp
+		.src('./public/_css/style.css')
+		.pipe(
+			postcss([
+				require('tailwindcss'),
+				require('autoprefixer')
+			])
+		)
+		.pipe(
+			cleanCSS({ debug: true }, details => {
+				console.log(
+					`Original Size: ${details.stats.originalSize / 1000}kb`
+				);
+				console.log(
+					`Minified Size: ${details.stats.minifiedSize / 1000}kb`
+				);
+			})
+		)
+		.pipe(gulp.dest('./public/css/'));
+});
 
 gulp.task('js:watch', ['js'], () => {
-  gulp.watch('./public/_js/**/*.js', ['js']);
+	gulp.watch('./public/_js/**/*.js', ['js']);
 });
 
-gulp.task('scss:watch', ['scss'], () => {
-  gulp.watch('./app/scss/**/*.scss', ['scss']);
+gulp.task('css:watch', ['css'], () => {
+	gulp.watch('./public/_css/**/*.css', ['css']);
 });
 
-gulp.task('default', ['js', 'scss']);
-gulp.task('watch', ['js:watch', 'scss:watch']);
+gulp.task('default', ['js', 'css']);
+gulp.task('watch', ['js:watch', 'css:watch']);

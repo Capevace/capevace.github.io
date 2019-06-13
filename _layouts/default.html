@@ -1,85 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="keywords" content="web developer, web entwickler, smoolabs, lübeck, günstig, php, javascript, react, wordpress">
-  <meta name="author" content="Lukas Mateffy">
-  <meta name="copyright" content="(c) Lukas Mateffy">
-  <meta name="robots" content="index,follow">
-  <meta name="revisit-after" content="14 days">
-  <meta http-equiv="language" content="english, en">
-  
-  <link rel="stylesheet" href="{{ "/public/css/style.css" | absolute_url }}">
-  <link rel="canonical" href="{{ site.github.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+---
+layout: base
+---
+<div class="header-background"></div>
 
-  <title>{% if page.title %}{{ page.title | append: ' - ' | append: site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-</head>
-<body>
+<header class="container flex justify-between items-center w-full py-8">
+	<a class="text-xl font-semibold" href="/">Lukas Mateffy</a>
+	<nav class="flex text-sm">
+		<!-- <a class="mr-5" href="/about">About Me</a> -->
+		<a class="mr-5" href="/projects">Projects</a>
+		<a class="mr-5" href="/blog">Blog</a>
+		<a class="mr-5" href="https://twitter.com/capevace">Twitter</a>
+		<a href="https://github.com/capevace">GitHub</a>
+	</nav>
+</header>
 
-  {% if layout.header_color == 'primary' %}
-    <header class="relative" id="background-canvas-container">
-      <canvas class="background-canvas"></canvas>
-      <section class="section section-primary">
-        <div class="container text-lifted">
-          {% include nav.html %}
-        </div>
-      </section>
-      <section class="section section-primary">
-        <div class="container">
+{{ content }}
 
-          <div class="row">
-            <div class="col-12 text-lifted">
-              <h1 class="header-title">I'm &nbsp;Lukas!</h1>
-              <p class="header-subtitle">&#x3C;web-developer /&#x3E;</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-
-  {% else %}
-    <header>
-      <section class="section section-accent">
-        <div class="container">
-          {% include nav.html %}
-        </div>
-      </section>
-    </header>
-
-  {% endif %}
-
-  <main>
-    {{content}}
-  </main>
-
-  <footer>
-    <section class="section section-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <p class="font-size-small text-center">
-              Made by Lukas Mateffy (<a class="font-weight-bold" href="https://twitter.com/Capevace">@Capevace</a>)
-            </p>
-          </div>
-          <div class="col-6">
-            <p class="font-size-small text-center">
-              <a class="font-weight-bold" href="https://twitter.com/Capevace">Twitter</a>
-              <span class="separator">|</span>
-              <a class="font-weight-bold" href="https://github.com/Capevace">GitHub</a>
-              <span class="separator">|</span>
-              <a class="font-weight-bold" href="/disclaimer">Disclaimer</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </footer>
-
-  <!-- Load fonts here so its not blocking first paint -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Sofia|PT+Mono" rel="stylesheet">
-  <script async src="{{ "/public/js/app.js" | absolute_url }}" charset="utf-8"></script>
-</body>
-</html>
+<footer class="container text-center py-6 flex justify-center text-xs text-gray-800">
+	<a href="/disclaimer">Disclaimer</a>
+	<span class="mx-2">&centerdot;</span>
+	<a href="https://twitter.com/capevace">Twitter</a>
+	<span class="mx-2">&centerdot;</span>
+	<a href="https://GitHub.com/capevace">GitHub</a>
+</footer>

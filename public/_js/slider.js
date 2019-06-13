@@ -22,14 +22,15 @@ module.exports = function (sliderId) {
     if (prevButton)
       prevButton.style.display = 'none';
   }
-
+  console.log(slides);
   for(var i = 0; i < slideCount; i++) {
     if (i === 0) {
       slides[i].style.opacity = 1;
-      slides[i].style.zIndex = 1;
+    } else {
+      slides[i].style.opacity = 0;
     }
 
-    slides[i].style.marginLeft = '-' + (i * 50) + '%';
+    // slides[i].style.marginLeft = '-' + (i * 50) + '%';
   }
 
   if (nextButton)
