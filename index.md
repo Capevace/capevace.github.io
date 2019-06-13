@@ -14,7 +14,7 @@ rawTitle: Lukas Mateffy - Software Engineer
 			I make web apps, mostly with Javascript on both front and back-end. Check out some of my <a class="border-b-2 border-gray-500" href="/projects">projects</a> to see what I've been working on or my <a href="https://github.com/capevace" class="border-b-2 border-gray-500">GitHub</a> for my open-source work.
 		</p>
 
-		<a href="#" class="block text-center rounded-lg bg-blue-500 px-8 py-2 text-white shadow-blue pointer">Contact Me</a>
+		<a href="mailto:contact@smoolabs.com" class="block text-center rounded-lg bg-blue-500 px-8 py-2 text-white shadow-blue pointer">Contact Me</a>
 	</article>
 	
 </div>
