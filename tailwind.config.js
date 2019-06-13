@@ -1,6 +1,9 @@
 module.exports = {
 	theme: {
 		extend: {
+			width: {
+				'30%': '30%'
+			},
 			boxShadow: {
 				blue: '0 4px 14px 0 rgba(0,118,255,0.39)',
 				'blue-sm': '0 0px 10px 0 rgba(0,118,255,0.4)',
