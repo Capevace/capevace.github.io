@@ -31,9 +31,9 @@ layout: default
 
 		{% if page.project.url %}
 			{% if page.project.urlTitle %}
-				<a class="mt-5 mb-8 block text-center rounded-lg bg-blue-500 px-8 py-2 text-white shadow-blue pointer" href="{{page.project.url}}" target="_blank">{{page.project.urlTitle}}</a>
+				<a class="mt-5 mb-8 block text-center rounded-lg bg-blue-500 px-8 py-2 text-white shadow-blue pointer no-link-border" href="{{page.project.url}}" target="_blank">{{page.project.urlTitle}}</a>
 			{% else %}
-				<a class="mt-5 mb-8 block text-center rounded-lg bg-blue-500 px-8 py-2 text-white shadow-blue pointer" href="{{page.project.url}}" target="_blank">Visit Project</a>
+				<a class="mt-5 mb-8 block text-center rounded-lg bg-blue-500 px-8 py-2 text-white shadow-blue pointer no-link-border" href="{{page.project.url}}" target="_blank">Visit Project</a>
 			{% endif %}
 		{% endif %}
 	</aside>

@@ -10,7 +10,7 @@ project:
     - slide-1.png
     - slide-2.png
   urlTitle: Buy on CodeCanyon
-order: 10001
+order: 10003
 ---
 
 This application allows WordPress plugin developers to add automatic update functionality by validating licenses or Envato purchase codes. It comes with a plug-and-play PHP library to implement.

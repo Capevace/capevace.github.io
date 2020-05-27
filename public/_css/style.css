@@ -41,3 +41,15 @@
 .opacity-transition {
 	transition: opacity 200ms ease;
 }
+
+.filter-shadow {
+	filter: drop-shadow(0px 1px 3px #D5D5D5);
+}
+
+table th {
+	@apply .font-semibold;
+}
+
+a:not(.no-link-border) {
+	@apply .border-b-2 .border-gray-500;
+}

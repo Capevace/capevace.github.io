@@ -1,14 +1,30 @@
 ---
 title: HotspotBypass
+subtitle: Change your MAC address and break networks
+
+downloadLink: http://google.com
+githubLink: https://github.com/Capevace/HotspotBypass
+
 project:
-  name: HotspotBypass
   platform: macOS
-  tech: JavaScript / Electron
+  tech: JavaScript, Electron
   year: 2017
-  url: https://github.com/Capevace/HotspotBypass
   slides:
     - hotspot-bypass.png
-order: 40
+
+changelog:
+  -
+    version: 1.0.0
+    name: First release
+    changes:
+      - First fully implemented version
+
+featured: 2
+layout: product
 ---
 
-HotspotBypass is a tool to change you Mac's MAC-Address. By doing this, you can trick some public (but not free) networks to give you actual internet access. Often, Hotels employ these sort of practices. This tool is meant to test your own network against these kind of vulnerabilities.
+HotspotBypass offers an easy way to change your MAC address on macOS. Get unlimited access to data-capped WiFi by randomizing your address everytime you run out of data or impersonate other network users and take theirs.
+
+<p class="mt-2">
+	However, bypassing WiFi restrictions might not be legal in every country. Remember to check before using.
+</p>

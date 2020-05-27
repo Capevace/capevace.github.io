@@ -8,7 +8,7 @@ project:
   url: https://clippo.mateffy.me
   slides:
     - clippo.png
-order: 900
+order: 10004
 ---
 
 When trying to copy long paragraphs of text from my phone to my computer, I noticed that there is no easy way to just do that. [Clippo](https://clippo.mateffy.me) tries to solve that problem.
