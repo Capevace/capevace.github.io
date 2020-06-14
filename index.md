@@ -23,5 +23,4 @@ rawTitle: Lukas Mateffy - Software Engineer
     	<a href="mailto:hello@mateffy.me" class="block text-center rounded-lg bg-blue-500 px-8 py-2 text-white shadow-blue pointer mb-2 fade-in delay-300 font-medium">Contact me via email</a>
     	<div class="text-xs text-gray-600 text-center fade-in delay-300">hello@mateffy.me</div>
     </article>
-
 </div>
