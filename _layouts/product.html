@@ -86,9 +86,11 @@ layout: default
   </section>
   {% endif %}
 
-  <div class="w-full flex m-auto mb-20 text-gray-800 fade-in delay-750">
+  <div
+    class="w-full flex flex-wrap md:flex-no-wrap m-auto mb-20 text-gray-800 fade-in delay-750"
+  >
     {% if page.changelog %}
-    <section class="flex-1">
+    <section class="flex-1 mb-5">
       <h3 class="font-semibold text-2xl mb-3 text-gray-900">Changelog</h3>
       {% for log in page.changelog %}
       <h4 class="font-bold text-xl mb-1">
@@ -108,8 +110,8 @@ layout: default
       {% endfor %}
     </section>
     {% endif %} {% if page.project %}
-    <section class="w-1/3">
-      <h3 class="font-semibold text-2xl mb-3 text-gray-900">About</h3>
+    <section class="w-full md:w-1/3">
+      <h3 class="font-semibold text-2xl mb-3 text-gray-900">Meta</h3>
       <table class="text-left">
         {% if page.project.client %}
         <tr>
