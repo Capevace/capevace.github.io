@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Neophana iOS
-subtitle: Unofficial iOS App for Leuphana University
+subtitle: Unofficial iOS App for Leuphana University (unreleased)
 
 appStoreLink: http://google.com
 githubLink: http://github.com/capevace/neophana
@@ -15,13 +15,11 @@ project:
     - slide-2.png
 
 changelog:
-  -
-    version: 1.0.0
+  - version: 1.0.0
     changes:
       - Added this
       - Added this
-  -
-    version: 0.1.0
+  - version: 0.1.0
     name: Beta Release
     changes:
       - Added this

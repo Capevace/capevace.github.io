@@ -7,11 +7,11 @@ project:
   tech: JavaScript
   year: 2017
   url: https://github.com/Capevace/halbert
-  titleStyle: 'font-family: monospace !important'
+  titleStyle: "font-family: monospace !important"
   slides:
     - thumbnail.png
 order: 1000
-featured: 2
+featured: 14
 layout: product
 ---
 

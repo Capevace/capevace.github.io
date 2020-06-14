@@ -5,7 +5,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mateffy.me"
 twitter_username: capevace
-github_username:  capevace
+github_username: capevace
 
 # Build settings
 markdown: kramdown
@@ -36,14 +36,12 @@ collections:
     permalink: /:path/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "projects"
     values:
-      layout: "project"
+      layout: "product"
