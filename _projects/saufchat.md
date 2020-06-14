@@ -2,7 +2,7 @@
 title: SAUF.CHAT
 subtitle: Peer-to-peer group video calls<br>and Spotify playback sync
 
-githubLink: https://mateffy.me/saufchat-ui
+githubLink: https://github.com/capevace/saufchat-ui
 visitLink: https://sauf.chat
 
 project:

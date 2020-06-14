@@ -3,11 +3,11 @@ layout: default
 rawTitle: Lukas Mateffy - Software Engineer
 ---
 
-<div class="container mx-auto my-6 mb-20 flex flex-wrap justify-around text-gray-800">
-	<figure class="flex-initial flex-1 sm:mr-10 mb-5 sm:mb-0 flex justify-center items-center relative fade-in">
-		<img class="rounded-full border-8 shadow-lg max-w-sm border-white " src="{{ '/public/images/profile.jpg' | absolute_url }}">
+<div class="container mx-auto mx-10 my-6 mb-20 flex flex-wrap justify-around text-gray-800">
+	<figure class="w-full sm:mr-10 mx-5 md:mx-20 mb-5 md:mb-10 md:mb-0 flex justify-center items-center relative fade-in">
+		<img class="rounded-full border-8 shadow-lg max-w-xs border-white" src="{{ '/public/images/profile.jpg' | absolute_url }}">
 	</figure>
-	<article class="flex-1 max-w-xl fade-in">
+	<article class=" max-w-xl fade-in">
 		<p class="text-3xl text-gray-900 font-semibold text fade-in" title="General Kenobi!">Hello there!</p>
 		<p class="text-3xl mb-5 text-gray-600 font-medium fade-in delay-200">
 			 I'm Lukas Mateffy and I am a software developer from Germany. 
@@ -23,4 +23,5 @@ rawTitle: Lukas Mateffy - Software Engineer
     	<a href="mailto:hello@mateffy.me" class="block text-center rounded-lg bg-blue-500 px-8 py-2 text-white shadow-blue pointer mb-2 fade-in delay-300 font-medium">Contact me via email</a>
     	<div class="text-xs text-gray-600 text-center fade-in delay-300">hello@mateffy.me</div>
     </article>
+
 </div>

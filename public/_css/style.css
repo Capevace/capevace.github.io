@@ -9,7 +9,7 @@
 }
 
 .container {
-  @apply .relative;
+  @apply .relative .px-5;
 }
 
 .header-background {

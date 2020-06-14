@@ -23,7 +23,7 @@ layout: default
 	</section>
 
     <h2 class="text-xl font-medium mt-10 mb-12 text-gray-700 text-center z-10 fade-in delay-300">Other Apps</h2>
-    <section class="flex flex-wrap justify-center mb-20 px-20 fade-in delay-500">
+    <section class="flex flex-wrap justify-center mb-20 px-10 lg:px-20 fade-in delay-500">
     	{% assign projects2 = site.projects | sort: 'featured' %}
     	{% for project in projects2 %}
     		{% if project.featured == nil or project.featured < 10 %}
@@ -37,7 +37,7 @@ layout: default
     					<h4 class="font-medium text-sm text-gray-600 ">{{project.subtitle}}</h4>
     				</section>
     			</a> -->
-    			<a href="{{ project.url }}" class="mb-10 text-black w-full sm:w-1/2 no-link-border flex items-center">
+    			<a href="{{ project.url }}" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
     				<img class="filter-shadow hover-scale  h-20 mr-8" src="{{icon}}">
     				<section class="text-left">
     					<h3 class="font-bold">{{project.title}}</h3>
@@ -49,7 +49,7 @@ layout: default
     </section>
 
     <h2 class="text-xl font-medium mt-10 mb-12 text-gray-700 text-center ">Open Source</h2>
-    <section class="px-20 flex flex-wrap justify-left mb-20 ">
+    <section class="px-20 sm:px-10 md:px-20 flex flex-wrap justify-left mb-20 ">
     	{% assign projects2 = site.projects | sort: 'featured' %}
     	{% for project in projects2 %}
     		{% if project.type != 'stuff' %}
@@ -61,7 +61,7 @@ layout: default
     				{% assign url = project.url %}
     			{% endif %}
     			{% assign icon = append: '/' | append: project.slug | append: '/icon.png' | relative_url %}
-    			<a href="{{ url }}" class="mb-10 text-black w-full sm:w-1/2 no-link-border">
+    			<a href="{{ url }}" class="mb-10 text-black w-full md:w-1/2 no-link-border">
     				<!-- <img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="{{icon}}"> -->
     				<section class="text-left">
     					<h3 class="font-bold">{{project.title}}</h3>

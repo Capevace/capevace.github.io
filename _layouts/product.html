@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="container mx-auto" style="max-width: 750px;">
+<div class="container mx-auto px-5" style="max-width: 750px;">
   <section class="w-full mt-5 mb-10">
     {% if page.hideImage != true %}
     <img
@@ -92,9 +92,9 @@ layout: default
       <h3 class="font-semibold text-2xl mb-3 text-gray-900">Changelog</h3>
       {% for log in page.changelog %}
       <h4 class="font-bold text-xl mb-1">
-        <a href="{{page.githubLink}}/releases/tag/{{log.version}}"
-          >{{log.version}}</a
-        >
+        <span href="{{page.githubLink}}/releases/tag/{{log.version}}">
+          {{log.version}}
+        </span>
 
         {% if log.name %}
         <span class="font-medium">– {{log.name}}</span>

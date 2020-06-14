@@ -7,10 +7,14 @@ layout: base
 <header
   class="container mx-auto flex flex-wrap sm:flex-no-wrap justify-between items-center w-full py-8"
 >
-  <a class="text-xl font-semibold no-link-border text-gray-900" href="/"
+  <a
+    class="text-xl font-semibold no-link-border text-gray-900 text-center sm:text-left w-full sm:w-auto mb-5 sm:mb-0"
+    href="/"
     >Lukas Mateffy <span class="blinking">_</span></a
   >
-  <nav class="flex text-sm font-regular mt-2 sm:mt-0 items-center">
+  <nav
+    class="flex text-sm font-regular mt-2 sm:mt-0 items-center justify-center sm:justify-end flex-1"
+  >
     <!-- <a class="mr-5" href="/about">About Me</a> -->
     <a
       class="transition-colors duration-200 mr-8 no-link-border border-b-2 border-transparent text-gray-800 text-base font-medium hover:border-gray-500 {% if page.url == '/projects.html' %} border-gray-500{% endif %}"
@@ -20,11 +24,15 @@ layout: base
     </a>
 
     <div
-      class="flex flex-wrap items-center bg-blue-500 rounded-lg text-gray-100 px-2 py-1 shadow text-gray-100 text-xs"
+      class="flex flex-wrap items-center bg-blue-500 rounded-lg text-gray-100 px-2 py-1 shadow text-gray-100 text-xs text-center sm:text-left"
     >
-      <div class="text-gray-200 font-semibold">@capevace</div>
-      <div class="mx-2 border-r border-blue-300 h-3"></div>
-      <div class="flex">
+      <div class="text-gray-200 font-semibold w-full sm:w-auto">
+        @capevace
+      </div>
+      <div
+        class="hidden sm:inline-block mx-2 border-r border-blue-300 h-3"
+      ></div>
+      <div class="flex justify-center w-full sm:w-auto">
         <a class="mr-2 no-link-border" href="https://twitter.com/capevace"
           >Twitter</a
         >
