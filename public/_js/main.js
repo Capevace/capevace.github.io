@@ -6,5 +6,6 @@ var ready = require('./util').ready;
 ready(function () {
   slider('project-slider');
   work('work');
+  setupFadeOut();
   // backgroundCanvas('background-canvas-container');
 });

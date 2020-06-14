@@ -30,7 +30,7 @@
     "laravel-mix": "^4.0.16",
     "object-assign": "^4.1.0",
     "prompt": "^1.0.0",
-    "tailwindcss": "^1.0.4",
+    "tailwindcss": "^1.4.6",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "vue-template-compiler": "^2.6.10"

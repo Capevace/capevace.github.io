@@ -1,25 +1,48 @@
 ---
 layout: base
 ---
+
 <div class="header-background"></div>
 
-<header class="container flex flex-wrap sm:flex-no-wrap justify-between items-center w-full py-8">
-	<a class="text-xl font-semibold" href="/">Lukas Mateffy</a>
-	<nav class="flex text-sm mt-2 sm:mt-0">
-		<!-- <a class="mr-5" href="/about">About Me</a> -->
-		<a class="mr-5" href="/projects">Projects</a>
-		<!-- <a class="mr-5" href="/blog">Blog</a> -->
-		<a class="mr-5" href="https://twitter.com/capevace">Twitter</a>
-		<a href="https://github.com/capevace">GitHub</a>
-	</nav>
+<header
+  class="container mx-auto flex flex-wrap sm:flex-no-wrap justify-between items-center w-full py-8"
+>
+  <a class="text-xl font-semibold no-link-border text-gray-900" href="/"
+    >Lukas Mateffy <span class="blinking">_</span></a
+  >
+  <nav class="flex text-sm font-regular mt-2 sm:mt-0 items-center">
+    <!-- <a class="mr-5" href="/about">About Me</a> -->
+    <a
+      class="transition-colors duration-200 mr-8 no-link-border border-b-2 border-transparent text-gray-800 text-base font-medium hover:border-gray-500 {% if page.url == '/projects.html' %} border-gray-500{% endif %}"
+      href="/projects"
+    >
+      Projects
+    </a>
+
+    <div
+      class="flex flex-wrap items-center bg-blue-500 rounded-lg text-gray-100 px-2 py-1 shadow text-gray-100 text-xs"
+    >
+      <div class="text-gray-200 font-semibold">@capevace</div>
+      <div class="mx-2 border-r border-blue-300 h-3"></div>
+      <div class="flex">
+        <a class="mr-2 no-link-border" href="https://twitter.com/capevace"
+          >Twitter</a
+        >
+        <a href="https://github.com/capevace" class="no-link-border">GitHub</a>
+      </div>
+    </div>
+    <!-- <a class="mr-5" href="/blog">Blog</a> -->
+  </nav>
 </header>
 
 {{ content }}
 
-<footer class="container text-center py-6 flex justify-center text-xs text-gray-800">
-	<a href="/disclaimer">Disclaimer</a>
-	<span class="mx-2">&centerdot;</span>
-	<a href="https://twitter.com/capevace">Twitter</a>
-	<span class="mx-2">&centerdot;</span>
-	<a href="https://GitHub.com/capevace">GitHub</a>
+<footer
+  class="container mx-auto text-center py-8 flex justify-center text-xs text-gray-800"
+>
+  <a href="/disclaimer">Disclaimer</a>
+  <span class="mx-2">&centerdot;</span>
+  <a href="https://twitter.com/capevace">Twitter</a>
+  <span class="mx-2">&centerdot;</span>
+  <a href="https://GitHub.com/capevace">GitHub</a>
 </footer>
