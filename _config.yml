@@ -31,7 +31,33 @@ collections:
   posts:
     output: true
     permalink: /post/:path
-  projects:
+  projects_apps:
+    output: true
+    permalink: /:path/
+    order:
+      - convertguru.md
+      - hotspot-bypass.md
+      - clippo.md
+      - wpls.md
+      - halbert.md
+      - mission-control.md
+      - playmusic-suite.md
+      - strandsalon-app.md
+  projects_open_source:
+    output: true
+    permalink: /:path/
+    order:
+      - betterpip.md
+      - 433mhz.md
+      - alpaca.md
+  projects_featured:
+    output: true
+    permalink: /:path/
+    order:
+      - saufchat.md
+      - xen-edit.md
+      - alpaca.md
+  projects_websites:
     output: true
     permalink: /:path/
 
@@ -42,6 +68,21 @@ defaults:
       layout: "default"
   - scope:
       path: "" # an empty string here means all files in the project
-      type: "projects"
+      type: "projects_apps"
+    values:
+      layout: "product"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "projects_open_source"
+    values:
+      layout: "product"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "projects_featured"
+    values:
+      layout: "product"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "projects_websites"
     values:
       layout: "product"

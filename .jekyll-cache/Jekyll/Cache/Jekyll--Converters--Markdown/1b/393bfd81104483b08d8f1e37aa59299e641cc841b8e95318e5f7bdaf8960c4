@@ -1,0 +1,235 @@
+I"q)<div class="container mx-auto mt-10 mb-16 " id="projects">
+	<h2 class="text-3xl font-semibold mb-24 text-gray-900 text-center fade-in">Projects</h2>
+	<section class="flex flex-wrap justify-between mb-16 fade-in">
+		
+			
+			<a href="/saufchat/" class="mb-10 text-black w-full sm:w-1/4 no-link-border ">
+				<img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="/saufchat/icon.png" />
+				<section class="text-center sm:px-0  px-20">
+					<h3 class="font-bold mb-1">SAUF.CHAT</h3>
+					<h4 class="font-semibold text-sm text-gray-600 ">Peer-to-peer group video calls<br />and Spotify playback sync</h4>
+				</section>
+			</a>
+		
+			
+			<a href="/xen-edit/" class="mb-10 text-black w-full sm:w-1/4 no-link-border ">
+				<img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="/xen-edit/icon.png" />
+				<section class="text-center sm:px-0  px-20">
+					<h3 class="font-bold mb-1">XenEdit</h3>
+					<h4 class="font-semibold text-sm text-gray-600 ">Edit, preview &amp; export XenHTML widgets for your jailbroken iPhone</h4>
+				</section>
+			</a>
+		
+			
+			<a href="/alpaca/" class="mb-10 text-black w-full sm:w-1/4 no-link-border ">
+				<img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="/alpaca/icon.png" />
+				<section class="text-center sm:px-0  px-20">
+					<h3 class="font-bold mb-1">Alpaca</h3>
+					<h4 class="font-semibold text-sm text-gray-600 ">Elegant Hacker News client for iOS &amp; macOS (Catalyst) built using SwiftUI</h4>
+				</section>
+			</a>
+		
+	</section>
+
+    <h2 class="text-xl font-medium mt-10 mb-12 text-gray-700 text-center z-10 fade-in delay-300">Other Apps</h2>
+    <section class="flex flex-wrap justify-center mb-20 px-10 lg:px-20 fade-in delay-500">
+    	
+    		
+    		<a href="/convertguru/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/convertguru/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">ConvertGuru</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Convert videos to GIFs in your browser</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/hotspot-bypass/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/hotspot-bypass/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">HotspotBypass</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Change your MAC address and break networks</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/clippo/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/clippo/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">Clippo</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Securely share your clipboard</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/wpls/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/wpls/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">WP License Server</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Automatic updates &amp; licensing for your premium WordPress plugins</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/halbert/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/halbert/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">H.A.L.B.E.R.T.</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Open-source home assistant</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/mission-control/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/mission-control/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">Mission Control</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Beautiful home dashboard software built on Node.js and the Raspberry Pi</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/playmusic-suite/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/playmusic-suite/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">PlayMusic Suite</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">A Google Play playlist downloader</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/strandsalon-app/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/strandsalon-app/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">Strandsalon iOS</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">iOS app for a local nightclub</h4>
+    			</section>
+    		</a>
+    	
+    </section>
+
+    <h2 class="text-xl font-medium mt-10 mb-12 text-gray-700 text-center ">Open Source</h2>
+    <section class="px-20 sm:px-10 md:px-20 flex flex-wrap justify-left mb-20 ">
+    	
+    		
+    		
+    		<a href="/betterpip/" class="mb-10 text-black w-full md:w-1/2 no-link-border">
+    			<!-- <img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="/betterpip/icon.png"> -->
+    			<section class="text-left">
+    				<h3 class="font-bold">BetterPiP</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Native macOS picture-in-picture in Firefox and Chrome</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		
+    		<a href="/433mhz/" class="mb-10 text-black w-full md:w-1/2 no-link-border">
+    			<!-- <img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="/433mhz/icon.png"> -->
+    			<section class="text-left">
+    				<h3 class="font-bold">433MHz</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Transmit data on a Raspberry Pi using a 433MHz sender</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		
+    		<a href="/cellular-automata/" class="mb-10 text-black w-full md:w-1/2 no-link-border">
+    			<!-- <img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="/cellular-automata/icon.png"> -->
+    			<section class="text-left">
+    				<h3 class="font-bold">Cellular Automata</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">A cellular automation playground</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		
+    		<a href="https://github.com/Capevace/chrome-dino-machine-learning" class="mb-10 text-black w-full md:w-1/2 no-link-border">
+    			<!-- <img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="/dino-machine-learning/icon.png"> -->
+    			<section class="text-left">
+    				<h3 class="font-bold">Chrome Dino ML</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">A neural network that can play the Chrome dinosaur game.</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		
+    		<a href="https://github.com/Capevace/Technik-Inventar" class="mb-10 text-black w-full md:w-1/2 no-link-border">
+    			<!-- <img class="filter-shadow hover-scale mb-3 h-32 m-auto" src="/technik-inventar/icon.png"> -->
+    			<section class="text-left">
+    				<h3 class="font-bold">Technik Inventar</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Inventory system for my old school's sound engineers</h4>
+    			</section>
+    		</a>
+    	
+    </section>
+
+    <h2 class="text-xl font-medium mt-10 mb-12 text-gray-700 text-center ">Websites</h2>
+    <section class="px-20  flex flex-wrap justify-between mb-10 ">
+    	
+    		
+    		<a href="/disco78/" class="mb-10 text-black w-full sm:w-30% no-link-border">
+    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/disco78/thumbnail.png" />
+    			<section class="">
+    				<h3 class="text-left font-semibold leading-tight">Disco78.com</h3>
+    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/dj54/" class="mb-10 text-black w-full sm:w-30% no-link-border">
+    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/dj54/thumbnail.png" />
+    			<section class="">
+    				<h3 class="text-left font-semibold leading-tight">DJ54.de</h3>
+    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/djmadmat/" class="mb-10 text-black w-full sm:w-30% no-link-border">
+    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/djmadmat/thumbnail.png" />
+    			<section class="">
+    				<h3 class="text-left font-semibold leading-tight">DJMatMat.com</h3>
+    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/element-control/" class="mb-10 text-black w-full sm:w-30% no-link-border">
+    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/element-control/thumbnail.png" />
+    			<section class="">
+    				<h3 class="text-left font-semibold leading-tight">Element Control</h3>
+    				<span class="text-left font-semibold text-sm text-gray-600">iOS Game</span>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/natuerlich-wasserbetten/" class="mb-10 text-black w-full sm:w-30% no-link-border">
+    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/natuerlich-wasserbetten/thumbnail.png" />
+    			<section class="">
+    				<h3 class="text-left font-semibold leading-tight">Natürlich Wasserbetten</h3>
+    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/rasmussen/" class="mb-10 text-black w-full sm:w-30% no-link-border">
+    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/rasmussen/thumbnail.png" />
+    			<section class="">
+    				<h3 class="text-left font-semibold leading-tight">Rasmussen24.de</h3>
+    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/wc-shipping-tracker/" class="mb-10 text-black w-full sm:w-30% no-link-border">
+    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/wc-shipping-tracker/thumbnail.png" />
+    			<section class="">
+    				<h3 class="text-left font-semibold leading-tight">WC Shipping Tracker</h3>
+    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    			</section>
+    		</a>
+    	
+    </section>
+
+</div>
+:ET

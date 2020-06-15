@@ -1,0 +1,15 @@
+I"m<h3 id="deprecation-notice">Deprecation notice</h3>
+
+<p>I switched my own home automation away from HALBERT a couple of months ago, so I’m not actively maintaining this package any more.</p>
+
+<p>H.A.L.B.E.R.T. is an open-source home automation software made for the Raspberry Pi. It enables users to easily control things in their home using either a web interface, or just using their voice. It uses an easy-to-use module system, which enables more advanced users to develop their own tools, and integrate them. Actually, most of the internal tools are built using just that module system.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Easy to customize home automation</li>
+  <li>Initial support for intent parsing</li>
+  <li>Powerful module system for your customizations</li>
+  <li><a href="https://github.com/homebridge/homebridge">Homebridge</a> embedded</li>
+</ul>
+:ET

@@ -1,0 +1,19 @@
+I"�<h3 id="deprecation-notice">Deprecation notice</h3>
+
+<blockquote>
+  <p>Google seems to have turned off the Android download API that was used in order for this to work. As it stands now, this project is archived.</p>
+</blockquote>
+
+<p><br /><br /></p>
+
+<p>PlayMusic Suite lets you download your playlists from Google Music to import them into other programs like iTunes, Serato DJ and others.</p>
+
+<p>I submitted this “feature” to Google as a bug report, but they responded by telling me it’s supposed to work this way so have fun downloading your music! :)</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Download your Google Play Music playlists as MP3 files</li>
+  <li>ID3 metadata will be automatically added, if detected</li>
+</ul>
+:ET

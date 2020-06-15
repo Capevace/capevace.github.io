@@ -1,0 +1,39 @@
+I"�<p>WooCommerce Shipping Tracker is a WooCommerce Plugin, that enables you to add Shipping Numbers to your orders, so your customers can track their shipments.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Add Tracking Numbers</li>
+  <li>Shipping Confirmations</li>
+  <li>Automatic generation of Tracking Links</li>
+  <li>Many Carriers supported (FedEx, USPS, DHL and more)</li>
+  <li>Create your own Carrier</li>
+  <li>Clean and Beautiful Email Notification</li>
+  <li>Tracking View on Order Page</li>
+  <li>Uses Carrier’s Logos</li>
+</ul>
+
+<h2 id="carriers">Carriers</h2>
+
+<p>For each order you can select from many different pre-made carriers. If the one you need is not available yet, then you can simply create it on your own!</p>
+
+<h3 id="pre-made-carriers">Pre-made Carriers</h3>
+
+<ul>
+  <li>Deutsche Post</li>
+  <li>DHL</li>
+  <li>DPD</li>
+  <li>FedEx</li>
+  <li>GLS</li>
+  <li>Hermes</li>
+  <li>UPS</li>
+  <li>United States Postal Office</li>
+  <li>TNT</li>
+</ul>
+
+<h2 id="languages-supported">Languages supported</h2>
+
+<p>Currently we only support English and German, but we’re working on translating it into Italian, Spanish and French!</p>
+
+<p>Happy Shipping!</p>
+:ET

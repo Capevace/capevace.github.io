@@ -30,7 +30,7 @@ gulp.task('work-thumbnails', () => {
 				background: '#888'
 			})
 		)
-		.pipe(gulp.dest('./public/static/img/work/'));
+		.pipe(gulp.dest('./assets/static/img/work/'));
 });
 
 gulp.task('work-slides', () => {
@@ -48,12 +48,12 @@ gulp.task('work-slides', () => {
 				gravity: 'Center'
 			})
 		)
-		.pipe(gulp.dest('./public/static/img/work/'));
+		.pipe(gulp.dest('./assets/static/img/work/'));
 });
 
 gulp.task('js', () => {
 	const b = browserify({
-		entries: './public/_js/main.js',
+		entries: './assets/_js/main.js',
 		debug: true,
 		extensions: ['.es6']
 	});
@@ -70,7 +70,7 @@ gulp.task('js', () => {
 			.on('error', gutil.log)
 
 			.pipe(sourcemaps.write('./'))
-			.pipe(gulp.dest('./public/js'))
+			.pipe(gulp.dest('./assets/js'))
 	);
 });
 
@@ -78,7 +78,7 @@ gulp.task('css', () => {
 	const postcss = require('gulp-postcss');
 
 	return gulp
-		.src('./public/_css/style.css')
+		.src('./assets/_css/style.css')
 		.pipe(
 			postcss([
 				require('tailwindcss'),
@@ -95,15 +95,15 @@ gulp.task('css', () => {
 				);
 			})
 		)
-		.pipe(gulp.dest('./public/css/'));
+		.pipe(gulp.dest('./assets/css/'));
 });
 
 gulp.task('js:watch', ['js'], () => {
-	gulp.watch('./public/_js/**/*.js', ['js']);
+	gulp.watch('./assets/_js/**/*.js', ['js']);
 });
 
 gulp.task('css:watch', ['css'], () => {
-	gulp.watch('./public/_css/**/*.css', ['css']);
+	gulp.watch('./assets/_css/**/*.css', ['css']);
 });
 
 gulp.task('default', ['js', 'css']);

@@ -109,33 +109,33 @@ layout: default
       </ul>
       {% endfor %}
     </section>
-    {% endif %} {% if page.project %}
+    {% endif %} {% if page.metadata %}
     <section class="w-full md:w-1/3">
       <h3 class="font-semibold text-2xl mb-3 text-gray-900">Meta</h3>
       <table class="text-left">
-        {% if page.project.client %}
+        {% if page.metadata.client %}
         <tr>
           <th valign="top" class="pr-5">Client:</th>
-          <td valign="top">{{page.project.client}}</td>
+          <td valign="top">{{page.metadata.client}}</td>
         </tr>
         {% endif %}
         <tr>
-          {% if page.project.year %}
+          {% if page.metadata.year %}
         </tr>
 
         <tr>
           <th valign="top" class="pr-5">Year:</th>
-          <td valign="top">{{page.project.year}}</td>
+          <td valign="top">{{page.metadata.year}}</td>
         </tr>
-        {% endif %} {% if page.project.platform %}
+        {% endif %} {% if page.metadata.platform %}
         <tr>
           <th valign="top" class="pr-5">Platform:</th>
-          <td valign="top">{{page.project.platform}}</td>
+          <td valign="top">{{page.metadata.platform}}</td>
         </tr>
-        {% endif %} {% if page.project.tech %}
+        {% endif %} {% if page.metadata.tech %}
         <tr>
           <th valign="top" class="pr-5">Tech:</th>
-          <td valign="top">{{page.project.tech}}</td>
+          <td valign="top">{{page.metadata.tech}}</td>
         </tr>
         {% endif %}
       </table>

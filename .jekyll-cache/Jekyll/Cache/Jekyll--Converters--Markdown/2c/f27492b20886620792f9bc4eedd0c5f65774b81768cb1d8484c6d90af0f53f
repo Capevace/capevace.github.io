@@ -1,0 +1,32 @@
+I"�<h2 id="features">Features</h2>
+
+<ul>
+  <li><strong>Peer-to-peer group video chat</strong> using <a href="https://peerjs.com/">PeerJS</a></li>
+  <li>Listen to your favourite music together by <strong>synchronizing your Spotify playback</strong></li>
+  <li>Room based authentication: <strong>You only need a link to join!</strong></li>
+</ul>
+
+<h3 id="planned">Planned</h3>
+
+<ul>
+  <li>Mini games to play together</li>
+</ul>
+
+<h2 id="how-it-works">How it works</h2>
+
+<h3 id="video-chat">Video chat</h3>
+
+<p>The server has a list of all connected peers, that every peer has access to. When this list changes, the newly added peer will try to call all peers on the list using <a href="https://peerjs.com/">PeerJS</a>.</p>
+
+<p>However, since this approach does not support things like end-to-end encryption, I’m thinking about switching the call architecture to one based on <a href="https://github.com/jitsi/lib-jitsi-meet">JitsiMeet</a></p>
+
+<h3 id="spotify-playback-sync">Spotify Playback Sync</h3>
+
+<p>The server has a queue of songs created and edited by the users in the current room, that every client has access to. A user can also authenticate Spotify in the page, which gives the SPA API access to Spotify.</p>
+
+<p>Once the list changes by adding, removing or moving a song, every client will then create or update a playlist called <code class="language-plaintext highlighter-rouge">SAUF.CHAT - Queue</code> in the user’s Spotify account and add / remove the respective songs.</p>
+
+<p>The server then keeps track of when the playback was started and how long each song in the list is. That way, we don’t rely on play/pause events being passed to the respective clients for timing the playback correctly, but by having a deterministic playback structure.</p>
+
+<p>By knowing the length of the songs and when the playlist was started, we can calculate where to skip to, should you join later. Actually playing the next song is done by Spotify tho, because we simply let it play the playlist.</p>
+:ET

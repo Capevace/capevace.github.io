@@ -1,0 +1,21 @@
+I"<p>WordPress License Server enables you to supply automatic updates for the plugins you develop, while only allowing such features if the customer actually owns a license.</p>
+
+<p><br /></p>
+
+<p>You can either create and manage your own licenses or simply verify Envato Purchase Codes using the Envato API.
+The Laravel application / PHP script is built for other theme/plugin developers, who want automatic updates and license/Envato purchase code verification for their own plugins. So if you want to implement such features into your plugin, this project is right for you!</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Automatic updates for your premium plugins</li>
+  <li>Verify Envato Purchase Codes</li>
+  <li>Verify Licenses that you’ve issued yourself</li>
+  <li>Detects if the customer is still in support-time window</li>
+  <li>Easy PHP integration into your WordPress plugins</li>
+  <li>Clean, extendable PSR-4 PHP code</li>
+  <li>Built using Laravel</li>
+  <li>Easy-to-use admin backend</li>
+  <li>Beautiful User Interface</li>
+</ul>
+:ET
