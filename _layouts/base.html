@@ -19,12 +19,9 @@
 
     <link
       rel="stylesheet"
-      href="{{ '/public/css/style.css' | absolute_url }}"
+      href="{{ '/assets/css/style.css' | absolute_url }}"
     />
-    <link
-      rel="canonical"
-      href="{{ site.github.url | replace:'index.html','' | absolute_url }}"
-    />
+    <link rel="canonical" href="{{ absolute_url }}" />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -50,7 +47,7 @@
     />
     <script
       async
-      src="{{ '/public/js/app.js' | absolute_url }}"
+      src="{{ '/assets/js/app.js' | absolute_url }}"
       charset="utf-8"
     ></script>
   </body>

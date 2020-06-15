@@ -8,12 +8,14 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 	defaultExtractor: content => content.match(/[A-Za-z0-9-_:/%]+/g) || []
 });
 
-mix.js('public/_js/main.js', 'public/js/app.js').postCss(
-	'public/_css/style.css',
-	'public/css',
-	[
-		require('tailwindcss'),
-		require('autoprefixer'),
-		...(process.env.NODE_ENV === 'production' ? [purgecss] : [])
-	]
-);
+mix
+	.js('_src/js/main.js', 'assets/js/app.js')
+	.postCss(
+		'_src/css/style.css',
+		'assets/css',
+		[
+			require('tailwindcss'),
+			require('autoprefixer'),
+			...(process.env.NODE_ENV === 'production' ? [purgecss] : [])
+		]
+	);
