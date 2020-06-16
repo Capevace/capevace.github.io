@@ -1,0 +1,13 @@
+I"�<p>While every major browser now supports some sort of picture-in-picture (PiP), back in the day that was not the case. Most PiP solutions out there were kinda wacky, since they were based on old browser extension APIs.</p>
+
+<p>Then with OSX Yosemite, Apple implemented native picture-in-picture across macOS, with a solid Safari integration. This PiP implementation provided sleek UI and even moved with native notifications coming in. In short, this solution was probably the best on the market at that point.</p>
+
+<p><strong>BetterPiP</strong> enables the same native picture in picture framework <em>in Firefox and Google Chrome</em> that Safari uses internally. This is based on Stephen Radford’s <a href="https://github.com/steve228uk/PiPHack">PiPHack</a>.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Watch HTML5 videos (YouTube, Vimeo, etc…) in native picture-in-picture mode (same as Safari)</li>
+  <li>Watch any public url in picture in picture mode</li>
+</ul>
+:ET

@@ -1,15 +1,17 @@
 ---
 title: Disco78.com
-project:
-  name: Disco78.com
+
+visitLink: http://disco78.com
+
+metadata:
   client: Disco78
   platform: Web
   tech: WordPress
   year: 2013
-  url: http://disco78.com
-  slides:
-    - slide-1.png
-order: 60
+
+slides:
+  - slide-1.png
+
 hideImage: true
 ---
 

@@ -29,35 +29,35 @@ layout: default
     <a
       href="{{page.buyLink}}"
       class="mx-2 no-link-border"
-      style="width: 135px; height: 40px; background: url({{ '/public/images/buy-button.svg' | relative_url }}) no-repeat;"
+      style="width: 135px; height: 40px; background: url({{ '/assets/images/buy-button.svg' | relative_url }}) no-repeat;"
       target="_blank"
     ></a>
     {% endif %} {% if page.appStoreLink %}
     <a
       href="{{page.appStoreLink}}"
       class="mx-2 no-link-border"
-      style="width: 135px; height: 40px; background: url({{ '/public/images/appstore-button.svg' | relative_url }}) no-repeat;"
+      style="width: 135px; height: 40px; background: url({{ '/assets/images/appstore-button.svg' | relative_url }}) no-repeat;"
       target="_blank"
     ></a>
     {% endif %} {% if page.visitLink %}
     <a
       href="{{page.visitLink}}"
       class="mx-2 no-link-border"
-      style="width: 135px; height: 40px; background: url({{ '/public/images/visit-button.svg' | relative_url }}) no-repeat;"
+      style="width: 135px; height: 40px; background: url({{ '/assets/images/visit-button.svg' | relative_url }}) no-repeat;"
       target="_blank"
     ></a>
     {% endif %} {% if page.downloadLink %}
     <a
       href="{{page.downloadLink}}"
       class="mx-2 no-link-border"
-      style="width: 135px; height: 40px; background: url({{ '/public/images/download-button.svg' | relative_url }}) no-repeat;"
+      style="width: 135px; height: 40px; background: url({{ '/assets/images/download-button.svg' | relative_url }}) no-repeat;"
       target="_blank"
     ></a>
     {% endif %} {% if page.githubLink %}
     <a
       href="{{page.githubLink}}"
       class="mx-2 no-link-border"
-      style="width: 135px; height: 40px; background: url({{ '/public/images/github-button.svg' | relative_url }}) no-repeat;"
+      style="width: 135px; height: 40px; background: url({{ '/assets/images/github-button.svg' | relative_url }}) no-repeat;"
       target="_blank"
     ></a>
     {% endif %}
@@ -67,10 +67,10 @@ layout: default
     {{ content }}
   </section>
 
-  {% if page.project.slides %}
+  {% if page.slides %}
   <section class="w-full flex mb-16 fade-in delay-750" id="project-slider">
     <div class="slider-slides relative w-full">
-      {% for slide in page.project.slides %}
+      {% for slide in page.slides %}
       <img
         class="slider-slide opacity-transition w-full flex absolute inset-0"
         src="{{ '/' | append: page.slug | append: '/' | append: slide | relative_url }}"

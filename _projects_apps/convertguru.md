@@ -1,25 +1,23 @@
 ---
-layout: product
 title: ConvertGuru
 subtitle: Convert videos to GIFs in your browser
 
 visitLink: https://mateffy.me/convert-guru
 githubLink: http://github.com/capevace/convert-guru
 
-project:
+metadata:
   platform: Web
   tech: Nuxt.js, Canvas
   year: 2019
-  slides:
-    - slide-1.png
-    - slide-2.png
-    - slide-3.png
+
+slides:
+  - slide-1.png
+  - slide-2.png
+  - slide-3.png
 
 changelog:
   - version: 0.1.0
     name: MVP released
-
-featured: 10
 ---
 
 This is an experiment in converting video files in the browser. It works by displaying a video frame by frame on a canvas and then append the canvas' contents to a GIF.

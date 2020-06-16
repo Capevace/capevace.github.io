@@ -23,9 +23,6 @@ changelog:
     name: First release
     changes:
       - Working video chat
-
-featured: 1
-layout: product
 ---
 
 ## Features

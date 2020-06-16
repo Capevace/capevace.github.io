@@ -1,15 +1,17 @@
 ---
 title: DJMatMat.com
-project:
-  name: DJMatMat.com
+
+visitLink: http://djmadmat.com
+
+metadata:
   client: DJMadMat
   platform: Web
   tech: WordPress
   year: 2013
-  url: http://djmadmat.com
-  slides:
-    - slide-1.png
-order: 50
+
+slides:
+  - slide-1.png
+
 hideImage: true
 ---
 

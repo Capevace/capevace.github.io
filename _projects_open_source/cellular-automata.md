@@ -6,7 +6,7 @@ githubLink: http://github.com/capevace/cellular
 visitLink: http://mateffy.me/cellular
 hideImage: true
 
-project:
+metadata:
   platform: Web
   year: 2019
   tech: JavaScript

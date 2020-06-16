@@ -1,14 +1,15 @@
 ---
 title: Element Control
 subtitle: A game I made when I was 14
-project:
-  name: Element Control
+
+metadata:
   platform: iOS Game
   tech: Swift
   year: 2014
-  slides:
-    - slide-1.png
-order: 30
+
+slides:
+  - slide-1.png
+
 hideImage: true
 ---
 

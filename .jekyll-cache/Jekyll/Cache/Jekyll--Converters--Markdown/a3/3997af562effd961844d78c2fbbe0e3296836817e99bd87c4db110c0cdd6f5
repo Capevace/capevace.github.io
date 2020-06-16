@@ -1,4 +1,4 @@
-I"q)<div class="container mx-auto mt-10 mb-16 " id="projects">
+I"o)<div class="container mx-auto mt-10 mb-16 " id="projects">
 	<h2 class="text-3xl font-semibold mb-24 text-gray-900 text-center fade-in">Projects</h2>
 	<section class="flex flex-wrap justify-between mb-16 fade-in">
 		
@@ -53,20 +53,29 @@
     		</a>
     	
     		
-    		<a href="/clippo/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
-    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/clippo/icon.png" />
+    		<a href="/wpls/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/wpls/icon.png" />
     			<section class="text-left">
-    				<h3 class="font-bold">Clippo</h3>
-    				<h4 class="font-semibold text-sm text-gray-600 ">Securely share your clipboard</h4>
+    				<h3 class="font-bold">WordPress License Server</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Automatic updates &amp; licensing for WordPress plugins</h4>
     			</section>
     		</a>
     	
     		
-    		<a href="/wpls/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
-    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/wpls/icon.png" />
+    		<a href="/woocommerce-shipping-tracker/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/woocommerce-shipping-tracker/icon.png" />
     			<section class="text-left">
-    				<h3 class="font-bold">WP License Server</h3>
-    				<h4 class="font-semibold text-sm text-gray-600 ">Automatic updates &amp; licensing for your premium WordPress plugins</h4>
+    				<h3 class="font-bold">WooCommerce Shipping Tracker</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Track your shipments in WooCommerce</h4>
+    			</section>
+    		</a>
+    	
+    		
+    		<a href="/mission-control-project/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/mission-control-project/icon.png" />
+    			<section class="text-left">
+    				<h3 class="font-bold">Mission Control</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Beautiful home dashboard software built on Node.js</h4>
     			</section>
     		</a>
     	
@@ -80,11 +89,11 @@
     		</a>
     	
     		
-    		<a href="/mission-control/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
-    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/mission-control/icon.png" />
+    		<a href="/clippo/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
+    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/clippo/icon.png" />
     			<section class="text-left">
-    				<h3 class="font-bold">Mission Control</h3>
-    				<h4 class="font-semibold text-sm text-gray-600 ">Beautiful home dashboard software built on Node.js and the Raspberry Pi</h4>
+    				<h3 class="font-bold">Clippo</h3>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Securely share your clipboard</h4>
     			</section>
     		</a>
     	
@@ -93,16 +102,7 @@
     			<img class="filter-shadow hover-scale  h-20 mr-8" src="/playmusic-suite/icon.png" />
     			<section class="text-left">
     				<h3 class="font-bold">PlayMusic Suite</h3>
-    				<h4 class="font-semibold text-sm text-gray-600 ">A Google Play playlist downloader</h4>
-    			</section>
-    		</a>
-    	
-    		
-    		<a href="/strandsalon-app/" class="mb-10 text-black w-full md:w-1/2 no-link-border flex items-center">
-    			<img class="filter-shadow hover-scale  h-20 mr-8" src="/strandsalon-app/icon.png" />
-    			<section class="text-left">
-    				<h3 class="font-bold">Strandsalon iOS</h3>
-    				<h4 class="font-semibold text-sm text-gray-600 ">iOS app for a local nightclub</h4>
+    				<h4 class="font-semibold text-sm text-gray-600 ">Download GooglePlay Music playlists</h4>
     			</section>
     		</a>
     	
@@ -171,7 +171,7 @@
     			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/disco78/thumbnail.png" />
     			<section class="">
     				<h3 class="text-left font-semibold leading-tight">Disco78.com</h3>
-    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    				<span class="text-left font-semibold text-sm text-gray-600"></span>
     			</section>
     		</a>
     	
@@ -180,7 +180,7 @@
     			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/dj54/thumbnail.png" />
     			<section class="">
     				<h3 class="text-left font-semibold leading-tight">DJ54.de</h3>
-    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    				<span class="text-left font-semibold text-sm text-gray-600"></span>
     			</section>
     		</a>
     	
@@ -189,7 +189,7 @@
     			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/djmadmat/thumbnail.png" />
     			<section class="">
     				<h3 class="text-left font-semibold leading-tight">DJMatMat.com</h3>
-    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    				<span class="text-left font-semibold text-sm text-gray-600"></span>
     			</section>
     		</a>
     	
@@ -198,7 +198,7 @@
     			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/element-control/thumbnail.png" />
     			<section class="">
     				<h3 class="text-left font-semibold leading-tight">Element Control</h3>
-    				<span class="text-left font-semibold text-sm text-gray-600">iOS Game</span>
+    				<span class="text-left font-semibold text-sm text-gray-600"></span>
     			</section>
     		</a>
     	
@@ -207,7 +207,7 @@
     			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/natuerlich-wasserbetten/thumbnail.png" />
     			<section class="">
     				<h3 class="text-left font-semibold leading-tight">Natürlich Wasserbetten</h3>
-    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    				<span class="text-left font-semibold text-sm text-gray-600"></span>
     			</section>
     		</a>
     	
@@ -216,16 +216,16 @@
     			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/rasmussen/thumbnail.png" />
     			<section class="">
     				<h3 class="text-left font-semibold leading-tight">Rasmussen24.de</h3>
-    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    				<span class="text-left font-semibold text-sm text-gray-600"></span>
     			</section>
     		</a>
     	
     		
-    		<a href="/wc-shipping-tracker/" class="mb-10 text-black w-full sm:w-30% no-link-border">
-    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/wc-shipping-tracker/thumbnail.png" />
+    		<a href="/strandsalon-app/" class="mb-10 text-black w-full sm:w-30% no-link-border">
+    			<img class="shadow-lg rounded-lg hover-scale mb-5" src="/strandsalon-app/thumbnail.png" />
     			<section class="">
-    				<h3 class="text-left font-semibold leading-tight">WC Shipping Tracker</h3>
-    				<span class="text-left font-semibold text-sm text-gray-600">Web</span>
+    				<h3 class="text-left font-semibold leading-tight">Strandsalon iOS</h3>
+    				<span class="text-left font-semibold text-sm text-gray-600"></span>
     			</section>
     		</a>
     	

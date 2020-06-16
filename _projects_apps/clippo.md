@@ -5,17 +5,13 @@ subtitle: Securely share your clipboard
 visitLink: https://clippo.mateffy.me
 githubLink: https://github.com/capevace/clippo
 
-project:
-  name: Clippo
+metadata:
   platform: Web
   tech: JavaScript
   year: 2017
-  slides:
-    - clippo.png
 
-featured: 12
-type: website
-layout: product
+slides:
+  - clippo.png
 ---
 
 When trying to copy long paragraphs of text from my phone to my computer, I noticed that there is no easy way to just do that. [Clippo](https://clippo.mateffy.me) tries to solve that problem.

@@ -1,22 +1,17 @@
 ---
 title: PlayMusic Suite
-subtitle: A Google Play playlist downloader
+subtitle: Download GooglePlay Music playlists
 
 downloadLink: https://github.com/Capevace/playmusic-suite/releases/latest
 githubLink: https://github.com/capevace/playmusic-suite
 
-project:
-  name: Google Play Music Suite
+metadata:
   platform: macOS
   tech: JavaScript (Electron)
   year: 2017
-  url: https://github.com/Capevace/playmusic-suite/releases
-  urlTitle: Download for macOS
-  slides:
-    - playmusic-suite.png
-order: 10
-layout: product
-featured: 16
+
+slides:
+  - playmusic-suite.png
 ---
 
 ### Deprecation notice

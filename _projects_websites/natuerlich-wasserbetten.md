@@ -1,16 +1,18 @@
 ---
 title: Natürlich Wasserbetten
 subtitle: Webshop re-design & SEO optimization
-project:
-  name: Natürlich-Wasserbetten.de
+
+visitLink: https://natuerlich-wasserbetten.de
+
+metadata:
   client: Natürlich Wasserbetten
   platform: Web
   tech: WordPress
   year: 2017
-  url: https://natuerlich-wasserbetten.de
-  slides:
-    - slide-1.png
-order: 901
+
+slides:
+  - slide-1.png
+
 hideImage: true
 ---
 

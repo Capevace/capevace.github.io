@@ -37,12 +37,12 @@ collections:
     order:
       - convertguru.md
       - hotspot-bypass.md
-      - clippo.md
       - wpls.md
+      - woocommerce-shipping-tracker.md
+      - mission-control-project.md
       - halbert.md
-      - mission-control.md
+      - clippo.md
       - playmusic-suite.md
-      - strandsalon-app.md
   projects_open_source:
     output: true
     permalink: /:path/

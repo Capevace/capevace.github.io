@@ -1,71 +1,20 @@
 ---
 title: BetterPiP
 subtitle: Native macOS picture-in-picture in Firefox and Chrome
-githubLink: https://github.com/Capevace/betterpip
-hideImage: true
 
-type: stuff
-layout: product
+githubLink: https://github.com/Capevace/betterpip
+
+metadata:
+  year: 2017
 ---
 
-A Node package to transmit data on a Raspberry Pi using a 433MHz sender.
+While every major browser now supports some sort of picture-in-picture (PiP), back in the day that was not the case. Most PiP solutions out there were kinda wacky, since they were based on old browser extension APIs.
 
-Note: I made this for my cheap remote outlets, I don't know if this is actually useful with other devices lol.
+Then with OSX Yosemite, Apple implemented native picture-in-picture across macOS, with a solid Safari integration. This PiP implementation provided sleek UI and even moved with native notifications coming in. In short, this solution was probably the best on the market at that point.
 
-## Installation
+**BetterPiP** enables the same native picture in picture framework _in Firefox and Google Chrome_ that Safari uses internally. This is based on Stephen Radford's [PiPHack](https://github.com/steve228uk/PiPHack).
 
-```sh
-npm install 433MHz
-```
+## Features
 
-## Usage
-
-```js
-const transmitCode = require("433MHz");
-
-// Input the code that you want to be transmitted
-transmitCode("1111111111111111111010111");
-
-// You have multiple options to customize the transmission
-transmitCode("1111111111111111111010111", {
-  transmitPin: 18,
-  shortDelay: 0.001,
-  longDelay: 0.005,
-  packetDelay: 0.05,
-});
-```
-
-### Options
-
-#### transmitPin
-
-This is the pin, the data pin of the transmitter is connected to on the GPIO.
-**Default:** 18
-
-#### shortDelay
-
-The short delay between pin output state changes.
-**Default:** 0.00037
-
-#### longDelay
-
-The longer delay between pin output state changes.
-**Default:** 0.00101
-
-#### packetDelay
-
-The delay between attempts (packets) of code data transmitted.
-**Default:** 0.01102
-
-## Intertechno switch code lookup
-
-I personally made these for my old Intertechno radio outlets which use a 12-bit code system. Below is a table where you can build your code to send by going from left to right.
-
-<br>
-
-|     Group      |     Switch     | Constant Value | On / Off  |
-| :------------: | :------------: | :------------: | :-------: |
-| A: `1111 1111` | 1: `1111 1111` |   `1110 101`   | On: `01`  |
-| B: `1011 1111` | 2: `1011 1111` |                | Off: `11` |
-| C: `1110 1111` | 3: `1110 1111` |                |           |
-| D: `1010 1111` |                |                |           |
+- Watch HTML5 videos (YouTube, Vimeo, etc...) in native picture-in-picture mode (same as Safari)
+- Watch any public url in picture in picture mode

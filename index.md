@@ -5,7 +5,7 @@ rawTitle: Lukas Mateffy - Software Engineer
 
 <div class="container mx-auto mx-10 my-6 mb-20 flex flex-wrap justify-around text-gray-800">
 	<figure class="w-full sm:mr-10 mx-5 md:mx-20 mb-5 md:mb-10 md:mb-0 flex justify-center items-center relative fade-in">
-		<img class="rounded-full border-8 shadow-lg max-w-xs border-white" src="{{ '/public/images/profile.jpg' | absolute_url }}">
+		<img class="rounded-full border-8 shadow-lg max-w-xs border-white" src="{{ '/assets/images/profile.jpg' | absolute_url }}">
 	</figure>
 	<article class=" max-w-xl fade-in">
 		<p class="text-3xl text-gray-900 font-semibold text fade-in" title="General Kenobi!">Hello there!</p>

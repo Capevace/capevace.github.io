@@ -1,17 +1,17 @@
 ---
-title: WP License Server
-subtitle: Automatic updates & licensing for your premium WordPress plugins
+title: WordPress License Server
+subtitle: Automatic updates & licensing for WordPress plugins
+
 buyLink: https://codecanyon.net/item/wordpress-plugin-update-license-server-automatic-updates-for-your-own-plugins/21464774
 
-project:
+metadata:
   platform: Web
   tech: Laravel / WordPress
   year: 2018
-  slides:
-    - slide-1.png
-    - slide-2.png
 
-featured: 13
+slides:
+  - slide-1.png
+  - slide-2.png
 ---
 
 WordPress License Server enables you to supply automatic updates for the plugins you develop, while only allowing such features if the customer actually owns a license.

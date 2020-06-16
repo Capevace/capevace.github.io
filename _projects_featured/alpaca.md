@@ -12,9 +12,6 @@ metadata:
 changelog:
   - version: 1.0.0
     name: Hello, World!
-
-featured: 3
-layout: product
 ---
 
 Learning a new technology without building a real-world application is hard. Building a Hacker News client teaches you some of its most important aspects. They provide a great API, that makes it easy to get started with a UI-related project. _Also I just wanted my own Hacker News client but this sounds way cooler_.

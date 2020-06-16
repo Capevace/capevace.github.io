@@ -1,15 +1,19 @@
 ---
 title: Rasmussen24.de
 subtitle: eCommerce Shop
-project:
+
+visitLink: https://rasmussen24.de
+
+metadata:
   client: Rasmussen
   platform: Web
   tech: WordPress
   year: 2018
-  slides:
-    - slide-1.png
-    - slide-2.png
-order: 10001
+
+slides:
+  - slide-1.png
+  - slide-2.png
+
 hideImage: true
 ---
 

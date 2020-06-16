@@ -1,18 +1,14 @@
 ---
 title: H.A.L.B.E.R.T.
 subtitle: Open-source home assistant
-project:
-  name: H.A.L.B.E.R.T.
+
+metadata:
   platform: Raspberry Pi
   tech: JavaScript
   year: 2017
-  url: https://github.com/Capevace/halbert
-  titleStyle: "font-family: monospace !important"
-  slides:
-    - thumbnail.png
-order: 1000
-featured: 14
-layout: product
+
+slides:
+  - thumbnail.png
 ---
 
 ### Deprecation notice

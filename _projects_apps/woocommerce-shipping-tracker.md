@@ -1,25 +1,23 @@
 ---
-title: WC Shipping Tracker
+title: WooCommerce Shipping Tracker
 subtitle: Track your shipments in WooCommerce
 
 buyLink: https://codecanyon.net/item/woocommerce-shipping-tracker/21322102
 
-project:
+metadata:
   platform: Web
   tech: PHP / WordPress
   year: 2018
-  slides:
-    - slide-1.png
-    - slide-2.png
 
-slidesNew:
+slidesOld:
+  - slide-1.png
+  - slide-2.png
+
+slides:
   - screenshot-3.png
   - screenshot-4.png
   - screenshot-1.png
   - screenshot-2.png
-
-hideImage: true
-order: 901
 ---
 
 WooCommerce Shipping Tracker is a WooCommerce Plugin, that enables you to add Shipping Numbers to your orders, so your customers can track their shipments.
