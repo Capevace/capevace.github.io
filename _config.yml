@@ -18,13 +18,12 @@ exclude:
   - gulpfile.js
   - package.json
   - yarn.lock
-  - public/_js
-  - public/_css
   - webpack.mix.js
   - tailwind.config.js
   - README.md
   - package-lock.json
   - mix-manifest.json
+  - deploy.sh
 
 collections:
   posts:

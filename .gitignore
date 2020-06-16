@@ -4,3 +4,4 @@ _site
 node_modules/
 .DS_Store
 mix-manifest.json
+.jekyll-cache
