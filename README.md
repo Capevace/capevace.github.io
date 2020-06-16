@@ -1,4 +1,4 @@
-# Personal Portfolio
-My personal portfolio. Built using Jekyll.
+# Personal Website
+My personal website. Built using Jekyll and Tailwind.
 
-Viewable on [mateffy.me](https://mateffy.me)
+[mateffy.me](https://mateffy.me)
