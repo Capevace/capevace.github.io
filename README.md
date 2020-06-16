@@ -1,4 +1,4 @@
 # Personal Portfolio
 My personal portfolio. Built using Jekyll.
 
-Viewable on [smoolabs.com](http://smoolabs.com)
+Viewable on [mateffy.me](https://mateffy.me)
