@@ -25,7 +25,6 @@ exclude:
   - README.md
   - package-lock.json
   - mix-manifest.json
-  - CNAME
 
 collections:
   posts:
