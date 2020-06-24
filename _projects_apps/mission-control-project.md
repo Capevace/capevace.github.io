@@ -29,3 +29,5 @@ When you start setting up software for your home – be it home automation, a NA
 ### Planned
 
 - Stability: while Mission Control works gracefully in my home, keep in mind that I've mostly built this for myself so not every use case will be stable at the moment
+
+![A concept render](/mission-control-project/concept.png)
