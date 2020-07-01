@@ -23,7 +23,7 @@ exclude:
   - README.md
   - package-lock.json
   - mix-manifest.json
-  - deploy.sh
+  - scripts
 
 collections:
   posts:
