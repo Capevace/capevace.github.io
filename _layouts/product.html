@@ -5,8 +5,13 @@ layout: default
 <div class="container mx-auto px-5" style="max-width: 750px;">
   <section class="w-full mt-5 mb-10">
     {% if page.hideImage != true %}
+    {% if page.icon %}
+      {% assign iconUrl = page.icon | relative_url %}
+    {% else %}
+      {% assign iconUrl = append: "/" | append: page.slug | append: "/icon.png" | relative_url %}
+    {% endif %}
     <img
-      src="{{ '/' | append: page.slug | append: '/icon.png' | relative_url }}"
+      src="{{iconUrl}}"
       class="max-w-2 m-auto filter-shadow fade-in"
       width="200px"
     />
