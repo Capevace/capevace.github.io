@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if page.disableRedirect != true %} 
-	<meta http-equiv="refresh" content="0;url={{page.link}}" />
+	<meta http-equiv="refresh" content="2;url={{page.link}}" />
 {% endif %}
 
 <div class="container mx-auto px-5" style="max-width: 750px;">
@@ -29,7 +29,7 @@ layout: default
 			{% endif %}
 			<img
 				src="{{iconUrl}}"
-				class="max-w-2 m-auto filter-shadow fade-in"
+				class="max-w-2 m-auto filter-shadow fade-in delay-500"
 				width="200px"
 			/>
 		{% endif %}
