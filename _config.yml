@@ -58,6 +58,9 @@ collections:
   projects_websites:
     output: true
     permalink: /:path/
+  redirects:
+    output: true
+    permalink: /:path/
 
 defaults:
   - scope:
@@ -84,3 +87,8 @@ defaults:
       type: "projects_websites"
     values:
       layout: "product"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "redirects"
+    values:
+      layout: "redirect"
