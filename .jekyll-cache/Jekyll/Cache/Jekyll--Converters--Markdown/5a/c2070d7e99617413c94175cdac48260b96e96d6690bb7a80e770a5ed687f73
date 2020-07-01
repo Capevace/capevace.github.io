@@ -1,8 +1,0 @@
-I"�<h2 id="what-are-cellular-automata">What are cellular automata?</h2>
-
-<blockquote>
-  <p>Cellular Automata are computational models that are typically represented by a grid with values (cells). A cell is a particular location on a grid with a value, like a cell on a spreadsheet you’d see in Microsoft Excel. Each cell in the grid evolves based on its neighbors and some rule. Elementary CAs are visualized by drawing a row of cells, then evolving that row according to a rule, and displaying the evolved row below its predecessor. All this being said, they’re easiest to understand by example:</p>
-</blockquote>
-
-<p>Definition by <a href="https://towardsdatascience.com/algorithmic-beauty-an-introduction-to-cellular-automata-f53179b3cf8f">Evan Kozliner</a></p>
-:ET
