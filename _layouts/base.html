@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta
       name="description"
       content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}"
@@ -38,7 +38,7 @@
   <body class="antialiased relative min-h-screen">
     <div class="absolute inset-t-0 inset-x-0 bg-blue-500 h-1 shadow-blue"></div>
 
-    {{content}}
+    <main style="padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);">{{content}}</main>
 
     <!-- Load fonts here so its not blocking first paint -->
     <link
