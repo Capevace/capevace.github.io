@@ -2,8 +2,14 @@
 layout: default
 ---
 
+{% if page.timeout %} 
+	{% assign timeout = page.timeout %}
+{% else %}
+	{% assign timeout = 2 %}
+{% endif %}
+
 {% if page.disableRedirect != true %} 
-	<meta http-equiv="refresh" content="2;url={{page.link}}" />
+	<meta http-equiv="refresh" content="{{timeout}};url={{page.link}}" />
 {% endif %}
 
 <div class="container mx-auto px-5" style="max-width: 750px;">
