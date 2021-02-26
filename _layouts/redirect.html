@@ -12,6 +12,11 @@ layout: default
 	<meta http-equiv="refresh" content="{{timeout}};url={{page.link}}" />
 {% endif %}
 
+<!-- DISABLE CACHE FOR REDIRECTS -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
 <div class="container mx-auto px-5" style="max-width: 750px;">
 	<section class="w-full m-auto mb-10 text-gray-700">
 		<h1 class=" text-base font-medium text-center fade-in mb-5 mt-10">
