@@ -1,7 +1,7 @@
 ---
 title: Trinktisch
 
-link: https://playingcards.io/ute5z8
+link: https://playingcards.io/h76aug
 
 timeout: 0
 hideImage: true
