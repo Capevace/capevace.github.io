@@ -9,8 +9,9 @@ github_username: capevace
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
+  - github-pages
 exclude:
   - Gemfile
   - Gemfile.lock
