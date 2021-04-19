@@ -8,7 +8,7 @@ layout: default
     {% if page.icon %}
       {% assign iconUrl = page.icon | relative_url %}
     {% else %}
-      {% assign iconUrl = append: "/" | append: page.slug | append: "/icon.png" | relative_url %}
+      {% assign iconUrl = "/" | append: page.slug | append: "/icon.png" | relative_url %}
     {% endif %}
     <img
       src="{{iconUrl}}"
