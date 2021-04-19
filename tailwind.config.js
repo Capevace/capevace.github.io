@@ -4,6 +4,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			borderRadius: {
+				'xl': '0.75rem'
+			},
 			width: {
 				'30%': '30%'
 			},
@@ -25,5 +28,9 @@ module.exports = {
 				}
 			}
 		}
+	},
+	variants: {
+		pointerEvents: ['responsive', 'group-hover'],
+		opacity: ['responsive', 'hover', 'focus', 'group-hover']
 	}
 }
