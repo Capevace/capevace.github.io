@@ -52,6 +52,6 @@ secondary: orange
 }
 ---
 <div class="mt-20">
-	{{page.mixes}}
+	hello
 	
 </div>
