@@ -191,6 +191,10 @@ a:not(.no-link-border) {
   }
 }
 
+.delay-100 {
+  animation-delay: 25ms;
+}
+
 .delay-200 {
   animation-delay: 50ms;
 }
@@ -207,6 +211,18 @@ a:not(.no-link-border) {
   animation-delay: 175ms;
 }
 
+.delay-600 {
+  animation-delay: 200ms;
+}
+
+.delay-700 {
+  animation-delay: 225ms;
+}
+
 .delay-750 {
   animation-delay: 250ms;
+}
+
+.delay-800 {
+  animation-delay: 300ms;
 }

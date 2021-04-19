@@ -4,7 +4,7 @@ title: Sets & Mixes
 subtitle: VIBES ON DEMAND
 hideImage: true
 ---
-
+<!-- delay-100 delay-200 delay-300 delay-400 delay-500 delay-600 delay-700 delay-800 delay-900 help tailwind purge -->
 <div class="mt-20">
 	{% for mix in site.data.mixes %}
 	<article class="w-full flex flex-wrap sm:flex-no-wrap px-6 py-6 bg-{{mix.primary}}-700 rounded-xl shadow-lg hover:shadow-xl border-4 border-transparent hover:border-{{mix.secondary}}-500 transition relative group overflow-hidden smooth-transition mb-5 fade-in {{mix.class}}">
