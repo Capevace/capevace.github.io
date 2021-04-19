@@ -1,9 +1,9 @@
 ---
+layout: default
 title: Mixes
 subtitle: VIBES ON DEMAND
 
 hideImage: true
-layout: titled
 
 mixes:
 - {
