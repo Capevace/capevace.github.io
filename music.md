@@ -25,7 +25,7 @@ hideImage: true
 						{{mix.length}}
 					</div>
 					{% if mix.videoLink and mix.embedSrc %}
-						<a href="#" class="block no-link-border hover:text-{{mix.primary}}-200 font-semibold smooth-transition flex justify-center items-center">
+						<a href="{{mix.videoLink}}" class="block no-link-border hover:text-{{mix.primary}}-200 font-semibold smooth-transition flex justify-center items-center">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56.401px" height="56.4px" viewBox="0 0 56.401 56.4" xml:space="preserve" class="fill-current w-5 h-5 mr-3">
 								<g>
 									<g>
