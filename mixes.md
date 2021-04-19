@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: titled
 title: Mixes
 subtitle: VIBES ON DEMAND
 
@@ -53,9 +53,5 @@ secondary: orange
 ---
 <div class="mt-20">
 	{{page.mixes}}
-	{% for item in page.mixes %}
-		<article class="w-full flex flex-wrap sm:flex-no-wrap px-6 py-6 bg-{{item.primary}}-700 rounded-xl shadow-lg hover:shadow-xl border-4 border-transparent hover:border-{{item.secondary}}-500 transition relative group overflow-hidden smooth-transition mb-5 fade-in delay-600">
-			Harro
-		</article>
-	{% endfor %}
+	
 </div>
