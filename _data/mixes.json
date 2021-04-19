@@ -8,7 +8,8 @@
 		"audioLink": "https://www.mixcloud.com/GiraffeAffe/wg13s-lockdown-lounge/",
 		"embedSrc": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FGiraffeAffe%2Fwg13s-lockdown-lounge%2F",
 		"primary": "indigo", 
-		"secondary": "pink"
+		"secondary": "pink",
+		"class": "delay-400"
 	},
 	{
 		"title": "DISCOHOUSE@HOME",
@@ -19,18 +20,20 @@
 		"audioLink": "https://soundcloud.com/capevace/disco-home-quarantine-mix-feat",
 		"embedSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/791389888&color=%236b46c1&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
 		"primary": "purple", 
-		"secondary": "orange"
+		"secondary": "orange",
+		"class": "delay-500"
 	},
 	{
 		"title": "LATINHOUSE@HOME",
 		"tag": "¿Cómo estás?",
 		"coverUrl": "/assets/images/mixes/latin-house-at-home-cover.jpg",
 		"length": "00:30:27",
-		"videoLink": "",
+		"videoLink": null,
 		"audioLink": "https://soundcloud.com/capevace/latinathome-quarantine-mix",
 		"embedSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/789515197&color=%236b46c1&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
 		"primary": "teal", 
-		"secondary": "yellow"
+		"secondary": "yellow",
+		"class": "delay-600"
 	},
 	{
 		"title": "HOUSE@HOME quarantine mix",
@@ -41,6 +44,7 @@
 		"audioLink": "https://soundcloud.com/capevace/houseathome-quarantine-mix",
 		"embedSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/788486371&color=%236b46c1&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
 		"primary": "green", 
-		"secondary": "orange"
+		"secondary": "orange",
+		"class": "delay-700"
 	}
 ]
