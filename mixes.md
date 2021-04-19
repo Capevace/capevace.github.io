@@ -24,7 +24,7 @@ title: DISCOHOUSE@HOME,
 tag: feat. KingSizeSlim,
 coverUrl: /assets/images/mixes/disco-house-at-home-cover.jpg,
 length: '00:24:02',
-videoLink: ,
+videoLink: false,
 audioLink: https://soundcloud.com/capevace/disco-home-quarantine-mix-feat,
 embedSrc: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/791389888&color=%236b46c1&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true,
 primary: purple, 
@@ -35,7 +35,7 @@ title: LATINHOUSE@HOME,
 tag: '¿Cómo estás?',
 coverUrl: /assets/images/mixes/latin-house-at-home-cover.jpg,
 length: '00:30:27',
-videoLink: ,
+videoLink: false,
 audioLink: https://soundcloud.com/capevace/latinathome-quarantine-mix,
 embedSrc: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/789515197&color=%236b46c1&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true,
 primary: teal, 
@@ -56,5 +56,5 @@ secondary: orange
 ---
 <div class="mt-20">
 	hello
-	
+
 </div>
