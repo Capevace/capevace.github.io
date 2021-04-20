@@ -41,6 +41,10 @@
   transition: opacity 200ms ease;
 }
 
+.colors-transition {
+  transition: color border-color background-color box-shadow 200ms ease;
+}
+
 .filter-shadow {
   filter: drop-shadow(0px 1px 3px #d5d5d5);
 }
@@ -208,15 +212,15 @@ a:not(.no-link-border) {
 }
 
 .delay-500 {
-  animation-delay: 175ms;
+  animation-delay: 180ms;
 }
 
 .delay-600 {
-  animation-delay: 200ms;
+  animation-delay: 205ms;
 }
 
 .delay-700 {
-  animation-delay: 225ms;
+  animation-delay: 235ms;
 }
 
 .delay-750 {
@@ -224,5 +228,5 @@ a:not(.no-link-border) {
 }
 
 .delay-800 {
-  animation-delay: 300ms;
+  animation-delay: 270ms;
 }
