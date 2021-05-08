@@ -14,7 +14,7 @@
 
 .header-background {
   @apply .absolute .inset-0 .z-0 .pointer-events-none .h-screen;
-  background-image: url("/assets/images/bg-solid.svg");
+  background-image: url("/../assets/images/bg-solid.svg");
 }
 
 .header-background::after {

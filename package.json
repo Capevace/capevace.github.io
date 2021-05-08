@@ -1,7 +1,7 @@
 {
-  "name": "matfolio",
+  "name": "mateffy.me",
   "version": "1.0.0",
-  "description": "My personal portfolio.",
+  "description": "My personal website",
   "main": "index.js",
   "repository": {
     "url": "https://github.com/Capevace/matfolio",
@@ -42,6 +42,7 @@
   "scripts": {
     "start": "cd jekyll && jekyll serve",
     "project": "node project-generator.js",
+    "dev": "parcel _src/js/main.js _src/css/style.css -d assets",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   }
