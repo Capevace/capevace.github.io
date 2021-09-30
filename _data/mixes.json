@@ -1,5 +1,19 @@
 [
 	{
+		"title": "INTRO PARTY @ SDU SØNDERBORG",
+		"tag": "#gig #insomnia #techno",
+		"coverUrl": "/assets/images/mixes/sdu2021.jpg",
+		"length": "",
+		"videoLink": "/music/sdu2021/sdu.mp4",
+		"embedLink": "/music/sdu2021/sdu.mp4",
+		"videos": [
+			"/music/sdu2021/sdu.mp4"
+		],
+		"primary": "green", 
+		"secondary": "teal",
+		"class": "delay-200"
+	},
+	{
 		"title": "WG13 LOCKDOWN LOUNGE",
 		"tag": "#house #disco #funk #hiphop",
 		"coverUrl": "/assets/images/mixes/wg13-lockdown-lounge-cover.jpg",
@@ -9,6 +23,20 @@
 		"embedSrc": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FGiraffeAffe%2Fwg13s-lockdown-lounge%2F",
 		"primary": "indigo", 
 		"secondary": "pink",
+		"class": "delay-300"
+	},
+	{
+		"title": "NYE 2021 DANCE PARTY",
+		"tag": "#livestream #twitch #disco",
+		"coverUrl": "/assets/images/mixes/nye2021.jpg",
+		"length": "",
+		"videoLink": "/music/nye2021/MIB.mp4",
+		"embedLink": "/music/nye2021/MIB.mp4",
+		"videos": [
+			"/music/nye2021/RockWithYou.mp4"
+		],
+		"primary": "pink", 
+		"secondary": "indigo",
 		"class": "delay-400"
 	},
 	{

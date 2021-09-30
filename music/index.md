@@ -4,7 +4,7 @@ title: Sets & Mixes
 subtitle: VIBES ON DEMAND
 hideImage: true
 ---
-<!-- delay-100 delay-200 delay-300 delay-400 delay-500 delay-600 delay-700 delay-800 delay-900 help tailwind purge -->
+<!--  delay-100 delay-200 delay-300 delay-400 delay-500 delay-600 delay-700 delay-800 delay-900 help tailwind purge -->
 <div class="mt-20">
 	{% for mix in site.data.mixes %}
 	<article class="w-full flex flex-wrap sm:flex-no-wrap px-6 py-6 bg-{{mix.primary}}-700 rounded-xl shadow-lg hover:shadow-xl border-4 border-transparent hover:border-{{mix.secondary}}-500 transition relative group overflow-hidden smooth-transition mb-5 fade-in {{mix.class}}">
@@ -24,7 +24,7 @@ hideImage: true
 					<div class="">
 						{{mix.length}}
 					</div>
-					{% if mix.videoLink and mix.embedSrc %}
+					{% if mix.videoLink %}
 						<a href="{{mix.videoLink}}" class="block no-link-border hover:text-{{mix.primary}}-200 font-semibold smooth-transition flex justify-center items-center">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56.401px" height="56.4px" viewBox="0 0 56.401 56.4" xml:space="preserve" class="fill-current w-5 h-5 mr-3">
 								<g>
@@ -44,7 +44,16 @@ hideImage: true
 					{% endif %}
 				</div>
 			</div>
-			{% if mix.embedSrc %}
+			{% if mix.videos %}
+				<section class="rounded overflow-hidden shadow">
+					{% for video in mix.videos %}
+						<video controls class="mt-2 rounded">
+							<source src="{{video}}" type="video/mp4">
+	    					Video not supported
+	    				</video>
+	    			{% endfor %}
+				</section>
+			{% elsif mix.embedSrc %}
 				<section class="rounded overflow-hidden shadow">
 					<iframe width="100%" height="65" src="{{mix.embedSrc}}" frameborder="0" loading="lazy"></iframe>
 				</section>
