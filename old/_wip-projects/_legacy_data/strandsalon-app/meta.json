@@ -1,0 +1,11 @@
+{
+  "name": "Strandsalon App",
+  "slug": "strandsalon-app",
+
+  "platform": "iOS",
+  "year": "2013",
+  "client": "Strandsalon Lübeck",
+  "technology": "Objective-C, PHP",
+
+  "slides": ["slide-1.png", "slide-2.png"]
+}

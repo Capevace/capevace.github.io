@@ -1,0 +1,78 @@
+[
+	{
+		"title": "INTRO PARTY @ SDU SØNDERBORG",
+		"tag": "#gig #insomnia #techno",
+		"coverUrl": "/assets/images/mixes/sdu2021.jpg",
+		"length": "",
+		"videoLink": "/music/sdu2021/sdu.mp4",
+		"embedLink": "/music/sdu2021/sdu.mp4",
+		"videos": [
+			"/music/sdu2021/sdu.mp4"
+		],
+		"primary": "green", 
+		"secondary": "teal",
+		"class": "delay-200"
+	},
+	{
+		"title": "WG13 LOCKDOWN LOUNGE",
+		"tag": "#house #disco #funk #hiphop",
+		"coverUrl": "/assets/images/mixes/wg13-lockdown-lounge-cover.jpg",
+		"length": "03:19:39",
+		"videoLink": "https://drive.google.com/file/d/1McziAWDtohV7kvvkl9knMCciuNGfEgh-/view?usp=sharing",
+		"audioLink": "https://www.mixcloud.com/GiraffeAffe/wg13s-lockdown-lounge/",
+		"embedSrc": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FGiraffeAffe%2Fwg13s-lockdown-lounge%2F",
+		"primary": "indigo", 
+		"secondary": "pink",
+		"class": "delay-300"
+	},
+	{
+		"title": "NYE 2021 DANCE PARTY",
+		"tag": "#livestream #twitch #disco",
+		"coverUrl": "/assets/images/mixes/nye2021.jpg",
+		"length": "",
+		"videoLink": "/music/nye2021/MIB.mp4",
+		"embedLink": "/music/nye2021/MIB.mp4",
+		"videos": [
+			"/music/nye2021/RockWithYou.mp4"
+		],
+		"primary": "pink", 
+		"secondary": "indigo",
+		"class": "delay-400"
+	},
+	{
+		"title": "DISCOHOUSE@HOME",
+		"tag": "feat. KingSizeSlim",
+		"coverUrl": "/assets/images/mixes/disco-house-at-home-cover.jpg",
+		"length": "00:24:02",
+		"videoLink": null,
+		"audioLink": "https://soundcloud.com/capevace/disco-home-quarantine-mix-feat",
+		"embedSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/791389888&color=%236b46c1&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+		"primary": "purple", 
+		"secondary": "orange",
+		"class": "delay-500"
+	},
+	{
+		"title": "LATINHOUSE@HOME",
+		"tag": "¿Cómo estás?",
+		"coverUrl": "/assets/images/mixes/latin-house-at-home-cover.jpg",
+		"length": "00:30:27",
+		"videoLink": null,
+		"audioLink": "https://soundcloud.com/capevace/latinathome-quarantine-mix",
+		"embedSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/789515197&color=%236b46c1&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+		"primary": "teal", 
+		"secondary": "yellow",
+		"class": "delay-600"
+	},
+	{
+		"title": "HOUSE@HOME quarantine mix",
+		"tag": "fresh quarantime tracks",
+		"coverUrl": "/assets/images/mixes/house-at-home-cover.jpg",
+		"length": "00:30:27",
+		"videoLink": "https://youtu.be/c3n75-6riNQ",
+		"audioLink": "https://soundcloud.com/capevace/houseathome-quarantine-mix",
+		"embedSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/788486371&color=%236b46c1&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+		"primary": "green", 
+		"secondary": "orange",
+		"class": "delay-700"
+	}
+]

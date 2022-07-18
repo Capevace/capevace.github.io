@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+{% if page.timeout %} 
+	{% assign timeout = page.timeout %}
+{% else %}
+	{% assign timeout = 2 %}
+{% endif %}
+
+{% if page.disableRedirect != true %} 
+	<meta http-equiv="refresh" content="{{timeout}};url={{page.link}}" />
+{% endif %}
+
+<!-- DISABLE CACHE FOR REDIRECTS -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<div class="container mx-auto px-5" style="max-width: 750px;">
+	<section class="w-full m-auto mb-10 text-gray-700">
+		<h1 class=" text-base font-medium text-center fade-in mb-5 mt-10">
+			Redirecting to...<br>
+			<span class="text-4xl font-semibold text-gray-900 text-blue-500">{{page.title}}</span>
+		</h1>
+		<h2
+			class="font-medium text-gray-600 text-base text-center fade-in delay-300 mb-2 sm:mb-2"
+		>
+			You should be redirected in a few seconds... 
+		</h2>
+		<h2
+			class="font-medium text-gray-600 text-center fade-in delay-300 mb-20 markdown  text-base"
+		>
+			If not, <a class="" href="{{page.link}}">click here</a> to open the site manually.
+		</h2>
+	</section>
+	<section class="w-full mt-5 mb-10">
+		{% if page.hideImage != true %} 
+			{% if page.icon %} 
+				{% assign iconUrl = page.icon | relative_url %}
+			{% else %}
+				{% assign iconUrl = "/" | append: page.slug | append: "/icon.png" | relative_url %}
+			{% endif %}
+			<img
+				src="{{iconUrl}}"
+				class="max-w-2 m-auto filter-shadow fade-in delay-500"
+				width="200px"
+			/>
+		{% endif %}
+	</section>
+</div>
