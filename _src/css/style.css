@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 * {
-  @apply .z-10;
+  @apply z-10;
 }
 
 .container {
-  @apply .relative .px-5;
+  @apply relative px-5;
 }
 
 .header-background {
-  @apply .absolute .inset-0 .z-0 .pointer-events-none .h-screen;
+  @apply absolute inset-0 z-0 pointer-events-none h-screen;
   background-image: url("/assets/images/bg-solid.svg");
 }
 
@@ -50,11 +50,11 @@
 }
 
 table th {
-  @apply .font-semibold;
+  @apply font-semibold;
 }
 
 a:not(.no-link-border) {
-  @apply .border-b-2 .border-gray-500;
+  @apply border-b-2 border-gray-500;
 }
 
 .markdown {
